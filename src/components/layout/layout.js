@@ -4,6 +4,7 @@ import Header from "../headers/header";
 import DrawerContent from "../drawers/drawer-content";
 import {useDispatch, useSelector} from "react-redux";
 import {selectUI, UI_ACTION_CREATORS} from "../../redux/features/ui/ui-slice";
+import Footer from "../footer/footer";
 
 const Layout = ({children}) => {
 
@@ -17,6 +18,9 @@ const Layout = ({children}) => {
             </Box>
             <Box>
                 {children}
+            </Box>
+            <Box>
+                <Footer />
             </Box>
 
             <SwipeableDrawer

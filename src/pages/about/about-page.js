@@ -171,7 +171,7 @@ const AboutPage = () => {
             </Box>
 
             <Box sx={{
-                backgroundColor: 'background.paper',
+                backgroundColor: 'background.default',
                 display: 'flex',
                 alignItems: 'center',
                 minHeight: '50vh',
