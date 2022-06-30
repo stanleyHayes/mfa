@@ -10,7 +10,8 @@ const ServicesPage = () => {
 
     return (
         <Layout>
-            <Box sx={{mt: 2, position: 'relative', height: '50vh', cursor: 'pointer'}}>
+
+            <Box sx={{mt: 2, position: 'relative', height: '50vh'}}>
                 <Box
                     sx={{
                         position: 'absolute',
@@ -77,7 +78,7 @@ const ServicesPage = () => {
                         </Grid>
                         <Grid item={true} xs={12} md={8}>
                             <Typography gutterBottom={true} variant="h4" sx={{color: 'text.primary'}}>
-                                Passport
+                                PASSPORT
                             </Typography>
                             <Typography gutterBottom={true} variant="body2" sx={{color: 'text.secondary'}}>
                                 The Passports Office, a bureau of the Ministry is responsible for the issue of passports
@@ -98,6 +99,7 @@ const ServicesPage = () => {
                     </Grid>
                 </Container>
             </Box>
+
             <Box sx={{
                 display: 'flex',
                 alignItems: 'center',
