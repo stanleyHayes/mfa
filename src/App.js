@@ -1,25 +1,28 @@
-import logo from './logo.svg';
 import './App.css';
+import {Route, Routes} from "react-router";
+import HomePage from "./pages/home/home-page";
+import {ThemeProvider} from "@mui/material";
+import {useSelector} from "react-redux";
+import {selectUI} from "./redux/features/ui/ui-slice";
+import {THEMES} from "./utils/themes";
+import AboutPage from "./pages/about/about-page";
+import ServicesPage from "./pages/services/services-page";
+import ContactPage from "./pages/contact/contact-page";
+import ForeignPoliciesPage from "./pages/foreign-policies/foreign-policies-page";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    const {themeVariant} = useSelector(selectUI);
+    return (
+        <ThemeProvider theme={themeVariant === 'dark' ? THEMES.darkTheme : THEMES.lightTheme}>
+            <Routes>
+                <Route element={<HomePage/>} path="/" exact={true}/>
+                <Route element={<AboutPage/>} path="/about" index={true}/>
+                <Route path="/foreign-policies" element={<ForeignPoliciesPage/>} index={true}/>
+                <Route element={<ServicesPage/>} path="/services" exact={true}/>
+                <Route element={<ContactPage/>} path="/contact" exact={true}/>
+            </Routes>
+        </ThemeProvider>
+    );
 }
 
 export default App;
