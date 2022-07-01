@@ -161,7 +161,7 @@ const DesktopFooter = () => {
                         </Typography>
                         <Divider variant="fullWidth" sx={{my: 2}}/>
                         <Stack direction="column" spacing={1}>
-                            <Link to="/" style={{textDecoration: 'none'}}>
+                            <Link to="/about-ghana" style={{textDecoration: 'none'}}>
                                 <Button size="small" sx={{
                                     color: 'text.secondary',
                                     textTransform: 'capitalize',
@@ -170,7 +170,7 @@ const DesktopFooter = () => {
                                     Profile
                                 </Button>
                             </Link>
-                            <Link to="/" style={{textDecoration: 'none'}}>
+                            <Link to="/about-ghana/economy" style={{textDecoration: 'none'}}>
                                 <Button size="small" sx={{
                                     color: 'text.secondary',
                                     textTransform: 'capitalize',
@@ -179,7 +179,7 @@ const DesktopFooter = () => {
                                     Economy
                                 </Button>
                             </Link>
-                            <Link to="/" style={{textDecoration: 'none'}}>
+                            <Link to="/about-ghana/regions" style={{textDecoration: 'none'}}>
                                 <Button size="small" sx={{
                                     color: 'text.secondary',
                                     textTransform: 'capitalize',

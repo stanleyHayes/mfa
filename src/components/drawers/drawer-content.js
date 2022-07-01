@@ -14,10 +14,14 @@ import {ChevronRight, OpenInNew} from "@mui/icons-material";
 import {useLocation} from "react-router";
 import NavLink from "../shared/nav-link";
 import {Link} from "react-router-dom";
+import {UI_ACTION_CREATORS} from "../../redux/features/ui/ui-slice";
+import {useDispatch} from "react-redux";
 
 const DrawerContent = () => {
 
     const {pathname} = useLocation();
+
+    const dispatch = useDispatch();
 
     return (
         <Box sx={{py: 4}}>
@@ -184,7 +188,7 @@ const DrawerContent = () => {
                         </AccordionSummary>
                         <AccordionDetails>
                             <Stack direction="column" spacing={1}>
-                                <Link to="/" style={{textDecoration: 'none'}}>
+                                <Link  onClick={() => dispatch(UI_ACTION_CREATORS.closeDrawer())} to="/" style={{textDecoration: 'none'}}>
                                     <Button size="small" sx={{
                                         color: 'text.secondary',
                                         textTransform: 'capitalize',
@@ -193,7 +197,7 @@ const DrawerContent = () => {
                                         Press Release
                                     </Button>
                                 </Link>
-                                <Link to="/" style={{textDecoration: 'none'}}>
+                                <Link  onClick={() => dispatch(UI_ACTION_CREATORS.closeDrawer())} to="/" style={{textDecoration: 'none'}}>
                                     <Button size="small" sx={{
                                         color: 'text.secondary',
                                         textTransform: 'capitalize',
@@ -202,7 +206,7 @@ const DrawerContent = () => {
                                         Announcement
                                     </Button>
                                 </Link>
-                                <Link to="/" style={{textDecoration: 'none'}}>
+                                <Link  onClick={() => dispatch(UI_ACTION_CREATORS.closeDrawer())} to="/" style={{textDecoration: 'none'}}>
                                     <Button size="small" sx={{
                                         color: 'text.secondary',
                                         textTransform: 'capitalize',
@@ -211,7 +215,7 @@ const DrawerContent = () => {
                                         Events
                                     </Button>
                                 </Link>
-                                <Link to="/" style={{textDecoration: 'none'}}>
+                                <Link  onClick={() => dispatch(UI_ACTION_CREATORS.closeDrawer())} to="/" style={{textDecoration: 'none'}}>
                                     <Button size="small" sx={{
                                         color: 'text.secondary',
                                         textTransform: 'capitalize',
@@ -220,7 +224,7 @@ const DrawerContent = () => {
                                         News
                                     </Button>
                                 </Link>
-                                <Link to="/" style={{textDecoration: 'none'}}>
+                                <Link  onClick={() => dispatch(UI_ACTION_CREATORS.closeDrawer())} to="/" style={{textDecoration: 'none'}}>
                                     <Button size="small" sx={{
                                         color: 'text.secondary',
                                         textTransform: 'capitalize',
@@ -240,7 +244,7 @@ const DrawerContent = () => {
                         </AccordionSummary>
                         <AccordionDetails>
                             <Stack direction="column" spacing={1}>
-                                <Link to="/" style={{textDecoration: 'none'}}>
+                                <Link  onClick={() => dispatch(UI_ACTION_CREATORS.closeDrawer())} to="/" style={{textDecoration: 'none'}}>
                                     <Button size="small" sx={{
                                         color: 'text.secondary',
                                         textTransform: 'capitalize',
@@ -249,7 +253,7 @@ const DrawerContent = () => {
                                         Videos
                                     </Button>
                                 </Link>
-                                <Link to="/" style={{textDecoration: 'none'}}>
+                                <Link  onClick={() => dispatch(UI_ACTION_CREATORS.closeDrawer())} to="/" style={{textDecoration: 'none'}}>
                                     <Button size="small" sx={{
                                         color: 'text.secondary',
                                         textTransform: 'capitalize',
@@ -258,7 +262,7 @@ const DrawerContent = () => {
                                         Photos
                                     </Button>
                                 </Link>
-                                <Link to="/" style={{textDecoration: 'none'}}>
+                                <Link  onClick={() => dispatch(UI_ACTION_CREATORS.closeDrawer())} to="/" style={{textDecoration: 'none'}}>
                                     <Button size="small" sx={{
                                         color: 'text.secondary',
                                         textTransform: 'capitalize',
@@ -278,7 +282,8 @@ const DrawerContent = () => {
                         </AccordionSummary>
                         <AccordionDetails>
                             <Stack direction="column" spacing={1}>
-                                <Link to="/" style={{textDecoration: 'none'}}>
+                                <Link onClick={() => dispatch(UI_ACTION_CREATORS.closeDrawer())} to="/about-ghana"
+                                      style={{textDecoration: 'none'}}>
                                     <Button size="small" sx={{
                                         color: 'text.secondary',
                                         textTransform: 'capitalize',
@@ -287,7 +292,8 @@ const DrawerContent = () => {
                                         Profile
                                     </Button>
                                 </Link>
-                                <Link to="/" style={{textDecoration: 'none'}}>
+                                <Link onClick={() => dispatch(UI_ACTION_CREATORS.closeDrawer())}
+                                      to="/about-ghana/economy" style={{textDecoration: 'none'}}>
                                     <Button
                                         size="small"
                                         sx={{
@@ -298,7 +304,8 @@ const DrawerContent = () => {
                                         Economy
                                     </Button>
                                 </Link>
-                                <Link to="/" style={{textDecoration: 'none'}}>
+                                <Link onClick={() => dispatch(UI_ACTION_CREATORS.closeDrawer())}
+                                      to="/about-ghana/regions" style={{textDecoration: 'none'}}>
                                     <Button size="small" sx={{
                                         color: 'text.secondary',
                                         textTransform: 'capitalize',

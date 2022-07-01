@@ -1,16 +1,167 @@
 import Layout from "../../components/layout/layout";
-import {Box, Container, Typography} from "@mui/material";
+import {Box, Container, Stack, Typography} from "@mui/material";
+import aicc from "../../assets/images/aicc.jpg";
+import independenceSquare from "../../assets/images/independence-square-768x481.jpg";
 
 const AboutGhanaPage = () => {
 
     return (
         <Layout>
-            <Box>
+            <Box sx={{mt: 1.8, position: 'relative', height: '50vh'}}>
+                <Box
+                    sx={{
+                        position: 'absolute',
+                        top: 0,
+                        bottom: 0,
+                        left: 0,
+                        right: 0,
+                    }}>
+                    <img
+                        alt=""
+                        src={aicc}
+                        style={{
+                            width: '100%',
+                            height: '100%',
+                            objectPosition: 'center',
+                            objectFit: 'cover'
+                        }}
+                    />
+                </Box>
 
+                <Box
+                    sx={{
+                        position: 'absolute',
+                        top: 0,
+                        bottom: 0,
+                        left: 0,
+                        right: 0,
+                        zIndex: 1000,
+                        padding: 2,
+                        backgroundColor: 'rgba(0, 0, 0, 0.85)',
+                    }}>
+                    <Box sx={{height: '100%', display: 'flex', alignItems: 'center', justifyContent: 'center'}}>
+                        <Typography
+                            mb={2}
+                            sx={{color: 'white'}}
+                            variant="h3">
+                            About Ghana
+                        </Typography>
+                    </Box>
+                </Box>
             </Box>
-            <Container>
-                <Typography align="center" variant="h2">Ghana Overview Page</Typography>
-            </Container>
+
+            <Box sx={{
+                backgroundColor: 'background.paper',
+                display: 'flex',
+                alignItems: 'center',
+                minHeight: '50vh',
+                py: {xs: 8, lg: 4}
+            }}>
+                <Container maxWidth="md">
+                    <Stack direction="column" spacing={4}>
+                        <Typography variant="h4" sx={{color: 'text.primary'}}>
+                            BRIEF HISTORY OF GHANA
+                        </Typography>
+                        <Typography variant="body1" sx={{color: 'text.secondary'}}>
+                            The Republic of Ghana is located in West Africa. It borders Cote d’Ivoire to the west,
+                            Burkina
+                            Faso to the north, Togo to the east and the Gulf of Guinea to the south.
+                        </Typography>
+                        <Typography variant="body1" sx={{color: 'text.secondary'}}>
+                            Ghana was inhabited in pre-colonial times by a number of ancient, predominantly Akan
+                            Kingdoms,
+                            including the Akwamus on the eastern coast, the inland Ashanti Empire and various Fante and
+                            non-Akan states like the Ga and Ewe states along the coast. Trade with European states
+                            flourished after contact with the Portuguese in the 15th century, and the British
+                            established a
+                            Crown Colony, the Gold Coast, in 1874.
+                        </Typography>
+                        <Typography variant="body1" sx={{color: 'text.secondary'}}>
+                            Ghana became the first sub-Saharan African country to gain its independence in 1957. Dr.
+                            Kwame
+                            Nkrumah, who was responsible for the successful negotiations with the British and declared
+                            independence, became the first Prime Minister and then President of Ghana. Recognising the
+                            significant role Dr. Kwame Nkrumah played in modern Ghana’s development, the FPSO was named
+                            after him by the Jubilee Integrated Project Team.
+                        </Typography>
+                        <Typography variant="body1" sx={{color: 'text.secondary'}}>
+                            In 2009, John Evans Atta Mills took office as President with a difference of about 40,000
+                            votes
+                            (0.46%) between his party, the National Democratic Congress, and the New Patriotic Party,
+                            marking the second time that power had successfully been transferred from one legitimately
+                            elected leader to another, and securing Ghana’s status as a stable democracy.
+                        </Typography>
+                    </Stack>
+                </Container>
+            </Box>
+
+            <Box
+                sx={{
+                    backgroundColor: 'background.default',
+                    display: 'flex',
+                    alignItems: 'center',
+                    minHeight: '50vh',
+                    py: {xs: 8, lg: 4}
+                }}>
+                <Container maxWidth="md">
+                    <img
+                        alt="Independence Square"
+                        src={independenceSquare}
+                        style={{width: '100%', maxWidth: '100%', height: '50vh', marginBottom: 16}}
+                    />
+                    <Stack direction="column" spacing={4}>
+
+                        <Typography variant="h4" sx={{color: 'text.primary'}}>
+                            OVERVIEW
+                        </Typography>
+                        <Typography variant="body1" sx={{color: 'text.secondary'}}>
+                            Ghana’s economy has been strengthened by a quarter century of relatively sound management, a
+                            competitive business environment, and sustained reductions in poverty levels. Ghana is well
+                            endowed with natural resources and agriculture accounts for roughly one-quarter of GDP and
+                            employs more than half of the workforce, mainly small landholders. The services sector
+                            accounts
+                            for 50% of GDP.
+                        </Typography>
+                        <Typography variant="body1" sx={{color: 'text.secondary'}}>
+                            According to the 2018 Budget Statement and Economic Policy, the summary of Ghana’s
+                            Macroeconomic
+                            performance, under the theme “Putting Ghana Back to Work”, is as follows:
+                        </Typography>
+
+                        <Typography variant="body1" sx={{color: 'text.secondary'}}>
+                            Overall real GDP grew at an estimated 7.8 percent in the first half of 2017 (6.6% in quarter
+                            one
+                            and 9.0% in quarter two) against 2.7 percent in same period in 2016. Overall GDP growth is
+                            provisionally estimated at 7.9 percent at the end of 2017, up from the original forecast of
+                            6.3
+                            percent; ?
+                            Non-Oil real GDP grew at an estimated 4.0 percent in the first half year of 2017 (4.0% in
+                            quarter one and 3.9% in quarter two) compared to 5.9 percent in the same period in 2016.
+                            Non-oil
+                            GDP growth is provisionally estimated at 4.8 percent at the end of 2017; ?
+                            End-period inflation was 11.6 percent in October, 2017 compared to 15.8 percent at the same
+                            period in 2016; ?
+                            The overall budget deficit on cash basis was 4.5 percent of GDP in September, 2017 against a
+                            target of 4.8 percent of GDP and an outturn of 6.4 percent in the same period in 2016; ?
+                            The primary balance posted a surplus of 0.3 percent of GDP in September, 2017, as targeted
+                            and
+                            is a significant improvement over a deficit of 1.6 percent realized during the same period
+                            in
+                            2016; ?
+                            The current account balance registered a deficit estimated at 0.2 percent of GDP in August,
+                            2017
+                            compared with 2.6 percent in August, 2016; and ?
+                            The country’s Gross International Reserves (including petroleum funds and encumbered
+                            assets),
+                            which stood at US$6.9 billion by end-September 2017, could cover 3.9 months of imports
+                            compared
+                            to the US$4.8 billion or 2.5 months import cover recorded in the same period of
+                            2016.
+                        </Typography>
+                    </Stack>
+                </Container>
+            </Box>
+
         </Layout>
     )
 }

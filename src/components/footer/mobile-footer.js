@@ -182,7 +182,7 @@ const MobileFooter = () => {
                     </AccordionSummary>
                     <AccordionDetails>
                         <Stack direction="column" spacing={1}>
-                            <Link to="/" style={{textDecoration: 'none'}}>
+                            <Link to="/about-ghana" style={{textDecoration: 'none'}}>
                                 <Button size="small" sx={{
                                     color: 'text.secondary',
                                     textTransform: 'capitalize',
@@ -191,7 +191,7 @@ const MobileFooter = () => {
                                     Profile
                                 </Button>
                             </Link>
-                            <Link to="/" style={{textDecoration: 'none'}}>
+                            <Link to="/about-ghana/economy" style={{textDecoration: 'none'}}>
                                 <Button size="small" sx={{
                                     color: 'text.secondary',
                                     textTransform: 'capitalize',
@@ -200,7 +200,7 @@ const MobileFooter = () => {
                                     Economy
                                 </Button>
                             </Link>
-                            <Link to="/" style={{textDecoration: 'none'}}>
+                            <Link to="/about-ghana/regions" style={{textDecoration: 'none'}}>
                                 <Button size="small" sx={{
                                     color: 'text.secondary',
                                     textTransform: 'capitalize',

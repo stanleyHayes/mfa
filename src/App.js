@@ -9,6 +9,9 @@ import AboutPage from "./pages/about/about-page";
 import ServicesPage from "./pages/services/services-page";
 import ContactPage from "./pages/contact/contact-page";
 import ForeignPoliciesPage from "./pages/foreign-policies/foreign-policies-page";
+import AboutGhanaPage from "./pages/ghana/about-ghana-page";
+import GhanaEconomyPage from "./pages/ghana/ghana-economy-page";
+import GhanaRegionsPage from "./pages/ghana/ghana-regions-page";
 
 function App() {
     const {themeVariant} = useSelector(selectUI);
@@ -20,6 +23,9 @@ function App() {
                 <Route path="/foreign-policies" element={<ForeignPoliciesPage/>} index={true}/>
                 <Route element={<ServicesPage/>} path="/services" exact={true}/>
                 <Route element={<ContactPage/>} path="/contact" exact={true}/>
+                <Route element={<AboutGhanaPage/>} path="/about-ghana" exact={true}/>
+                <Route element={<GhanaEconomyPage/>} path="/about-ghana/economy" exact={true}/>
+                <Route element={<GhanaRegionsPage/>} path="/about-ghana/regions" exact={true}/>
             </Routes>
         </ThemeProvider>
     );
