@@ -19,7 +19,7 @@ const GhanaRegionsPage = () => {
 
     return (
         <Layout>
-            <Box sx={{mt: 1.8, position: 'relative', height: '50vh'}}>
+            <Box sx={{mt: 1.7, position: 'relative', height: '50vh'}}>
                 <Box
                     sx={{
                         position: 'absolute',
