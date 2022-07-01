@@ -451,7 +451,7 @@ const HomePage = () => {
                     )}
 
                     {news && news.length > 0 && (
-                        <Grid container={true} spacing={2}>
+                        <Grid sx={{mb: 6}} container={true} spacing={2}>
                             {news && news.slice(0, 6).map(newsItem => {
                                 return (
                                     <Grid key={newsItem._id} item={true} xs={12} md={6} lg={4}>
@@ -461,6 +461,19 @@ const HomePage = () => {
                             })}
                         </Grid>
                     )}
+                    <Stack direction="row" justifyContent="flex-end">
+                        <Link to="/news" style={{textDecoration: 'none'}}>
+                            <Button
+                                size="large"
+                                color="primary"
+                                disableElevation={true}
+                                sx={{textTransform: 'capitalize'}}
+                                variant="contained"
+                                endIcon={<ChevronRight/>}>
+                                See more news
+                            </Button>
+                        </Link>
+                    </Stack>
                 </Container>
             </Box>
 

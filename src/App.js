@@ -19,6 +19,10 @@ import GrowthAndDevelopmentAgendaPage from "./pages/foreign-policies/growth-and-
 import KwakuAmpratrumSarpongPage from "./pages/about/kwaku-ampratwum-sarpong-profile";
 import ThomasMbombaProfilePage from "./pages/about/thomas-mbomba-profile-page";
 import ChiefDirectorProfilePage from "./pages/about/chief-director-profile-page";
+import EventsPage from "./pages/events/events-page";
+import NewsPage from "./pages/news/news-page";
+import NewsDetailPage from "./pages/news/news-detail-page";
+import EventDetailPage from "./pages/events/event-detail-page";
 
 function App() {
     const {themeVariant} = useSelector(selectUI);
@@ -70,6 +74,30 @@ function App() {
                 <Route
                     element={<ForeignPolicyGuidelinePage/>}
                     path="/foreign-policies/ghana-foreign-policy-guideline"
+                    exact={true}
+                />
+
+                <Route
+                    element={<NewsPage/>}
+                    path="/news"
+                    exact={true}
+                />
+
+                <Route
+                    element={<EventsPage/>}
+                    path="/events/"
+                    exact={true}
+                />
+
+                <Route
+                    element={<NewsDetailPage/>}
+                    path="/news/:newsID"
+                    exact={true}
+                />
+
+                <Route
+                    element={<EventDetailPage/>}
+                    path="/events/:eventID"
                     exact={true}
                 />
             </Routes>

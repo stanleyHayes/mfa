@@ -8,6 +8,7 @@ const newsSlice = createSlice({
         singleNews: null,
         newsLoading: false,
         newsError: null,
+        count: news.length
     },
     reducers: {},
     extraReducers: builder => {}

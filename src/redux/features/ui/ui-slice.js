@@ -4,7 +4,8 @@ const uiSlice = createSlice({
     name: 'ui',
     initialState: {
         themeVariant: 'dark',
-        drawerOpen: false
+        drawerOpen: false,
+        viewMode: 'grid'
     },
     reducers: {
         toggleTheme: (state) => {
@@ -15,7 +16,10 @@ const uiSlice = createSlice({
         },
         closeDrawer: (state) => {
             state.drawerOpen = false;
-        }
+        },
+        toggleViewMode: (state) => {
+            state.viewMode = state.viewMode === 'grid' ? 'list': 'grid'
+        },
     }
 });
 

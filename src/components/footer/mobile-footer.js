@@ -88,7 +88,7 @@ const MobileFooter = () => {
                     </AccordionSummary>
                     <AccordionDetails>
                         <Stack direction="column" spacing={1}>
-                            <Link to="/" style={{textDecoration: 'none'}}>
+                            <Link to="/press" style={{textDecoration: 'none'}}>
                                 <Button size="small" sx={{
                                     color: 'text.secondary',
                                     textTransform: 'capitalize',
@@ -97,7 +97,7 @@ const MobileFooter = () => {
                                     Press Release
                                 </Button>
                             </Link>
-                            <Link to="/" style={{textDecoration: 'none'}}>
+                            <Link to="/announcements" style={{textDecoration: 'none'}}>
                                 <Button size="small" sx={{
                                     color: 'text.secondary',
                                     textTransform: 'capitalize',
@@ -106,7 +106,7 @@ const MobileFooter = () => {
                                     Announcement
                                 </Button>
                             </Link>
-                            <Link to="/" style={{textDecoration: 'none'}}>
+                            <Link to="/events" style={{textDecoration: 'none'}}>
                                 <Button size="small" sx={{
                                     color: 'text.secondary',
                                     textTransform: 'capitalize',
@@ -115,7 +115,7 @@ const MobileFooter = () => {
                                     Events
                                 </Button>
                             </Link>
-                            <Link to="/" style={{textDecoration: 'none'}}>
+                            <Link to="/news" style={{textDecoration: 'none'}}>
                                 <Button size="small" sx={{
                                     color: 'text.secondary',
                                     textTransform: 'capitalize',
@@ -124,7 +124,7 @@ const MobileFooter = () => {
                                     News
                                 </Button>
                             </Link>
-                            <Link to="/" style={{textDecoration: 'none'}}>
+                            <Link to="/vacancies" style={{textDecoration: 'none'}}>
                                 <Button size="small" sx={{
                                     color: 'text.secondary',
                                     textTransform: 'capitalize',

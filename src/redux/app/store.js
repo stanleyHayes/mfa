@@ -12,7 +12,8 @@ const store = configureStore({
     preloadedState: {
         ui: {
             themeVariant: 'light',
-            drawerOpen: false
+            drawerOpen: false,
+            viewMode: 'grid'
         }
     }
 });

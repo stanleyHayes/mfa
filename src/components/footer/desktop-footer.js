@@ -73,7 +73,7 @@ const DesktopFooter = () => {
                         </Typography>
                         <Divider variant="fullWidth" sx={{my: 2}}/>
                         <Stack direction="column" spacing={1}>
-                            <Link to="/" style={{textDecoration: 'none'}}>
+                            <Link to="/press" style={{textDecoration: 'none'}}>
                                 <Button size="small" sx={{
                                     color: 'text.secondary',
                                     textTransform: 'capitalize',
@@ -82,7 +82,7 @@ const DesktopFooter = () => {
                                     Press Release
                                 </Button>
                             </Link>
-                            <Link to="/" style={{textDecoration: 'none'}}>
+                            <Link to="/announcements" style={{textDecoration: 'none'}}>
                                 <Button size="small" sx={{
                                     color: 'text.secondary',
                                     textTransform: 'capitalize',
@@ -91,7 +91,7 @@ const DesktopFooter = () => {
                                     Announcement
                                 </Button>
                             </Link>
-                            <Link to="/" style={{textDecoration: 'none'}}>
+                            <Link to="/events" style={{textDecoration: 'none'}}>
                                 <Button size="small" sx={{
                                     color: 'text.secondary',
                                     textTransform: 'capitalize',
@@ -100,7 +100,7 @@ const DesktopFooter = () => {
                                     Events
                                 </Button>
                             </Link>
-                            <Link to="/" style={{textDecoration: 'none'}}>
+                            <Link to="/news" style={{textDecoration: 'none'}}>
                                 <Button size="small" sx={{
                                     color: 'text.secondary',
                                     textTransform: 'capitalize',
@@ -109,7 +109,7 @@ const DesktopFooter = () => {
                                     News
                                 </Button>
                             </Link>
-                            <Link to="/" style={{textDecoration: 'none'}}>
+                            <Link to="/vacancies" style={{textDecoration: 'none'}}>
                                 <Button size="small" sx={{
                                     color: 'text.secondary',
                                     textTransform: 'capitalize',
@@ -126,7 +126,7 @@ const DesktopFooter = () => {
                         </Typography>
                         <Divider variant="fullWidth" sx={{my: 2}}/>
                         <Stack direction="column" spacing={1}>
-                            <Link to="/" style={{textDecoration: 'none'}}>
+                            <Link to="/media/videos" style={{textDecoration: 'none'}}>
                                 <Button size="small" sx={{
                                     color: 'text.secondary',
                                     textTransform: 'capitalize',
@@ -135,7 +135,7 @@ const DesktopFooter = () => {
                                     Videos
                                 </Button>
                             </Link>
-                            <Link to="/" style={{textDecoration: 'none'}}>
+                            <Link to="/media/photos" style={{textDecoration: 'none'}}>
                                 <Button size="small" sx={{
                                     color: 'text.secondary',
                                     textTransform: 'capitalize',
@@ -144,7 +144,7 @@ const DesktopFooter = () => {
                                     Photos
                                 </Button>
                             </Link>
-                            <Link to="/" style={{textDecoration: 'none'}}>
+                            <Link to="/media/publications" style={{textDecoration: 'none'}}>
                                 <Button size="small" sx={{
                                     color: 'text.secondary',
                                     textTransform: 'capitalize',
