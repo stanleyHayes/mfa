@@ -205,7 +205,7 @@ const DesktopNavBar = () => {
                                 sx={{
                                     borderTopRightRadius: 32,
                                     borderBottomRightRadius: 32,
-                                    borderBottomLeftRadius: 0,
+                                    borderBottomLeftRadius: 32,
                                     borderTopLeftRadius: 32,
                                     backgroundColor: 'colors.action',
                                     textTransform: 'capitalize'

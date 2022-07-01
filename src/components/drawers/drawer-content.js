@@ -7,6 +7,7 @@ import {
     Container,
     Link as MUILink,
     Stack,
+    Tooltip,
     Typography
 } from "@mui/material";
 import MobileNavLink from "../shared/mobile-nav-link";
@@ -24,9 +25,9 @@ const DrawerContent = () => {
     const dispatch = useDispatch();
 
     return (
-        <Box sx={{py: 4}}>
+        <Box sx={{py: 2, backgroundColor: 'background.default', minHeight: '100vh'}}>
             <Container>
-                <Stack direction="column" spacing={1}>
+                <Stack sx={{mb: 4}} direction="column" spacing={1}>
                     <MobileNavLink
                         active={pathname === '/'}
                         path="/" label="Home"
@@ -117,8 +118,8 @@ const DrawerContent = () => {
                             </Stack>
                         </AccordionDetails>
                     </Accordion>
-                    <Accordion sx={{backgroundColor: 'background.paper'}} variant="elevation" elevation={0}>
-                        <AccordionSummary expandIcon={<ChevronRight color="primary"/>}>
+                    <Accordion variant="elevation" elevation={0}>
+                        <AccordionSummary sx={{marginLeft: -1}} expandIcon={<ChevronRight color="primary"/>}>
                             <Typography variant="body2" sx={{color: 'text.primary', fontWeight: 'bold'}}>
                                 Quick Links
                             </Typography>
@@ -180,8 +181,8 @@ const DrawerContent = () => {
                             </Stack>
                         </AccordionDetails>
                     </Accordion>
-                    <Accordion sx={{backgroundColor: 'background.paper'}} variant="elevation" elevation={0}>
-                        <AccordionSummary expandIcon={<ChevronRight color="primary"/>}>
+                    <Accordion variant="elevation" elevation={0}>
+                        <AccordionSummary sx={{marginLeft: -1}} expandIcon={<ChevronRight color="primary"/>}>
                             <Typography variant="body2" sx={{color: 'text.primary', fontWeight: 'bold'}}>
                                 Public
                             </Typography>
@@ -241,8 +242,8 @@ const DrawerContent = () => {
                             </Stack>
                         </AccordionDetails>
                     </Accordion>
-                    <Accordion sx={{backgroundColor: 'background.paper'}} variant="elevation" elevation={0}>
-                        <AccordionSummary expandIcon={<ChevronRight color="primary"/>}>
+                    <Accordion variant="elevation" elevation={0}>
+                        <AccordionSummary sx={{marginLeft: -1}} expandIcon={<ChevronRight color="primary"/>}>
                             <Typography variant="body2" sx={{color: 'text.primary', fontWeight: 'bold'}}>
                                 Media
                             </Typography>
@@ -282,8 +283,8 @@ const DrawerContent = () => {
                             </Stack>
                         </AccordionDetails>
                     </Accordion>
-                    <Accordion sx={{backgroundColor: 'background.paper'}} variant="elevation" elevation={0}>
-                        <AccordionSummary expandIcon={<ChevronRight color="primary"/>}>
+                    <Accordion variant="elevation" elevation={0}>
+                        <AccordionSummary sx={{marginLeft: -1}} expandIcon={<ChevronRight color="primary"/>}>
                             <Typography variant="body2" sx={{color: 'text.primary', fontWeight: 'bold'}}>
                                 About Ghana
                             </Typography>
@@ -326,6 +327,26 @@ const DrawerContent = () => {
                         </AccordionDetails>
                     </Accordion>
                 </Stack>
+                <Tooltip title="Apply for your passport online">
+                    <MUILink target="_blank" underline="none" href="https://passport.mfa.gov.gh/">
+                        <Button
+                            fullWidth={true}
+                            endIcon={<OpenInNew/>}
+                            sx={{
+                                borderTopRightRadius: 32,
+                                borderBottomRightRadius: 32,
+                                borderBottomLeftRadius: 32,
+                                borderTopLeftRadius: 32,
+                                backgroundColor: 'colors.action',
+                                textTransform: 'capitalize',
+                                padding: 1
+                            }}
+                            disableElevation={true}
+                            size="small">
+                            Online Passport Application
+                        </Button>
+                    </MUILink>
+                </Tooltip>
             </Container>
         </Box>
     )
