@@ -58,75 +58,75 @@ const HonorableMinisterProfile = () => {
                 py: {xs: 8}
             }}>
                 <Container>
-                    <Stack direction="column" spacing={2}>
-                        <Typography variant="h5" sx={{color: 'text.primary'}}>
-                            PROFILE OF THE HONOURABLE MINISTER
-                        </Typography>
 
-                        <Grid container={true} spacing={2}>
-                            <Grid item={true} xs={12} md={4}>
-                                <img
-                                    alt="Minister of foreign affairs"
-                                    src={minster}
-                                    style={{
-                                        width: '100%',
-                                        height: '100%',
-                                        borderRadius: 32,
-                                        objectFit: 'cover',
-                                    }}/>
-                            </Grid>
-                            <Grid item={true} xs={12} md={8}>
-                                <Stack direction="column" spacing={2}>
-                                    <Typography variant="body1" sx={{color: 'text.secondary'}}>
-                                        Hon. Shirley Ayorkor Botchwey has served as Minister for Foreign Affairs and
-                                        Regional
-                                        Integration of Ghana since 10th January 2017. As Foreign Minister, she has led
-                                        the Council
-                                        of Ministers of the 15-member Economic Community of West African States (ECOWAS)
-                                        for two
-                                        successive terms since July 2020 to the present. Under her leadership, the
-                                        Council has
-                                        advised the Authority of Heads of State and Government of ECOWAS on the response
-                                        to the
-                                        security situation in the Sahel, including four military takeovers, one
-                                        attempted coup and a
-                                        failed coup; the review of the Supplementary Protocol on Democracy and
-                                        Governance; the
-                                        reform of the ECOWAS Commission; and ECOWAS budget reforms to ensure efficiency
-                                        and more
-                                        funding for Community Programmes. In that role, she has led the process of
-                                        negotiations
-                                        towards transitions to democracy with the military regimes that have seized
-                                        power in the
-                                        ECOWAS region since 2020, including as leader of the ECOWAS delegations to
-                                        Guinea and
-                                        Burkina Faso and as a member of the ECOWAS Mediation Mission to Mali.
-                                    </Typography>
-                                    <Typography variant="body1" sx={{color: 'text.secondary'}}>
-                                        Hon. Botchwey has extensive experience in diplomacy having served as a Deputy
-                                        Minister for
-                                        Foreign Affairs in the last term of President John Agyekum Kufuor, from
-                                        2006-2007 and
-                                        2008-2009. She oversaw an extensive transformation in both human resource
-                                        development and
-                                        conditions of service for Foreign Service Officers while streamlining and
-                                        improving consular
-                                        and passport services both at home and at Ghana’s missions abroad, introducing
-                                        digitization
-                                        and enhanced online services. Ghana’s foreign policy successes under her
-                                        leadership include
-                                        the high visibility and positive image Ghana enjoys under the Presidency of
-                                        President Nana
-                                        Addo Dankwa Akufo-Addo. She led Ghana’s successful campaign for membership of
-                                        the United
-                                        Nations Security Council for the term 2022-2023. Foreign Minister Botchwey is a
-                                        member of
-                                        Ghana’s National Security Council.
-                                    </Typography>
-                                </Stack>
-                            </Grid>
+                    <Typography variant="h5" sx={{color: 'text.primary'}}>
+                        PROFILE OF THE HONOURABLE MINISTER
+                    </Typography>
+
+                    <Grid container={true} spacing={2}>
+                        <Grid item={true} xs={12} md={4}>
+                            <img
+                                alt="Minister of foreign affairs"
+                                src={minster}
+                                style={{
+                                    width: '100%',
+                                    height: '100%',
+                                    borderRadius: 32,
+                                    objectFit: 'cover',
+                                }}/>
                         </Grid>
-
+                        <Grid item={true} xs={12} md={8}>
+                            <Stack direction="column" spacing={2}>
+                                <Typography variant="body1" sx={{color: 'text.secondary'}}>
+                                    Hon. Shirley Ayorkor Botchwey has served as Minister for Foreign Affairs and
+                                    Regional
+                                    Integration of Ghana since 10th January 2017. As Foreign Minister, she has led
+                                    the Council
+                                    of Ministers of the 15-member Economic Community of West African States (ECOWAS)
+                                    for two
+                                    successive terms since July 2020 to the present. Under her leadership, the
+                                    Council has
+                                    advised the Authority of Heads of State and Government of ECOWAS on the response
+                                    to the
+                                    security situation in the Sahel, including four military takeovers, one
+                                    attempted coup and a
+                                    failed coup; the review of the Supplementary Protocol on Democracy and
+                                    Governance; the
+                                    reform of the ECOWAS Commission; and ECOWAS budget reforms to ensure efficiency
+                                    and more
+                                    funding for Community Programmes. In that role, she has led the process of
+                                    negotiations
+                                    towards transitions to democracy with the military regimes that have seized
+                                    power in the
+                                    ECOWAS region since 2020, including as leader of the ECOWAS delegations to
+                                    Guinea and
+                                    Burkina Faso and as a member of the ECOWAS Mediation Mission to Mali.
+                                </Typography>
+                                <Typography variant="body1" sx={{color: 'text.secondary'}}>
+                                    Hon. Botchwey has extensive experience in diplomacy having served as a Deputy
+                                    Minister for
+                                    Foreign Affairs in the last term of President John Agyekum Kufuor, from
+                                    2006-2007 and
+                                    2008-2009. She oversaw an extensive transformation in both human resource
+                                    development and
+                                    conditions of service for Foreign Service Officers while streamlining and
+                                    improving consular
+                                    and passport services both at home and at Ghana’s missions abroad, introducing
+                                    digitization
+                                    and enhanced online services. Ghana’s foreign policy successes under her
+                                    leadership include
+                                    the high visibility and positive image Ghana enjoys under the Presidency of
+                                    President Nana
+                                    Addo Dankwa Akufo-Addo. She led Ghana’s successful campaign for membership of
+                                    the United
+                                    Nations Security Council for the term 2022-2023. Foreign Minister Botchwey is a
+                                    member of
+                                    Ghana’s National Security Council.
+                                </Typography>
+                            </Stack>
+                        </Grid>
+                    </Grid>
+                    <Stack direction="column" spacing={2}>
                         <Typography variant="body1" sx={{color: 'text.secondary'}}>
                             Hon. Botchwey previously served as Deputy Minister for Information (2005-2006), and
                             subsequently as the Deputy Minister for Trade and Industry (2007-2008) in the first term of
