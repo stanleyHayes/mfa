@@ -65,7 +65,7 @@ const DrawerContent = () => {
                                 <NavLink
                                     label="Foreign Policy Objectives"
                                     active={pathname === '/foreign-policies/foreign-policy-objectives'}
-                                    path="/foreign-policy/foreign-policies-objectives"
+                                    path="/foreign-policies/foreign-policies-objectives"
                                 />
 
                                 <NavLink
@@ -188,7 +188,8 @@ const DrawerContent = () => {
                         </AccordionSummary>
                         <AccordionDetails>
                             <Stack direction="column" spacing={1}>
-                                <Link  onClick={() => dispatch(UI_ACTION_CREATORS.closeDrawer())} to="/" style={{textDecoration: 'none'}}>
+                                <Link onClick={() => dispatch(UI_ACTION_CREATORS.closeDrawer())} to="/press"
+                                      style={{textDecoration: 'none'}}>
                                     <Button size="small" sx={{
                                         color: 'text.secondary',
                                         textTransform: 'capitalize',
@@ -197,7 +198,8 @@ const DrawerContent = () => {
                                         Press Release
                                     </Button>
                                 </Link>
-                                <Link  onClick={() => dispatch(UI_ACTION_CREATORS.closeDrawer())} to="/" style={{textDecoration: 'none'}}>
+                                <Link onClick={() => dispatch(UI_ACTION_CREATORS.closeDrawer())} to="/announcements"
+                                      style={{textDecoration: 'none'}}>
                                     <Button size="small" sx={{
                                         color: 'text.secondary',
                                         textTransform: 'capitalize',
@@ -206,7 +208,8 @@ const DrawerContent = () => {
                                         Announcement
                                     </Button>
                                 </Link>
-                                <Link  onClick={() => dispatch(UI_ACTION_CREATORS.closeDrawer())} to="/" style={{textDecoration: 'none'}}>
+                                <Link onClick={() => dispatch(UI_ACTION_CREATORS.closeDrawer())} to="/events"
+                                      style={{textDecoration: 'none'}}>
                                     <Button size="small" sx={{
                                         color: 'text.secondary',
                                         textTransform: 'capitalize',
@@ -215,7 +218,8 @@ const DrawerContent = () => {
                                         Events
                                     </Button>
                                 </Link>
-                                <Link  onClick={() => dispatch(UI_ACTION_CREATORS.closeDrawer())} to="/" style={{textDecoration: 'none'}}>
+                                <Link onClick={() => dispatch(UI_ACTION_CREATORS.closeDrawer())} to="/news"
+                                      style={{textDecoration: 'none'}}>
                                     <Button size="small" sx={{
                                         color: 'text.secondary',
                                         textTransform: 'capitalize',
@@ -224,7 +228,8 @@ const DrawerContent = () => {
                                         News
                                     </Button>
                                 </Link>
-                                <Link  onClick={() => dispatch(UI_ACTION_CREATORS.closeDrawer())} to="/" style={{textDecoration: 'none'}}>
+                                <Link onClick={() => dispatch(UI_ACTION_CREATORS.closeDrawer())} to="/vacancies"
+                                      style={{textDecoration: 'none'}}>
                                     <Button size="small" sx={{
                                         color: 'text.secondary',
                                         textTransform: 'capitalize',
@@ -244,7 +249,8 @@ const DrawerContent = () => {
                         </AccordionSummary>
                         <AccordionDetails>
                             <Stack direction="column" spacing={1}>
-                                <Link  onClick={() => dispatch(UI_ACTION_CREATORS.closeDrawer())} to="/" style={{textDecoration: 'none'}}>
+                                <Link onClick={() => dispatch(UI_ACTION_CREATORS.closeDrawer())} to="/media/videos"
+                                      style={{textDecoration: 'none'}}>
                                     <Button size="small" sx={{
                                         color: 'text.secondary',
                                         textTransform: 'capitalize',
@@ -253,7 +259,8 @@ const DrawerContent = () => {
                                         Videos
                                     </Button>
                                 </Link>
-                                <Link  onClick={() => dispatch(UI_ACTION_CREATORS.closeDrawer())} to="/" style={{textDecoration: 'none'}}>
+                                <Link onClick={() => dispatch(UI_ACTION_CREATORS.closeDrawer())} to="/media/photos"
+                                      style={{textDecoration: 'none'}}>
                                     <Button size="small" sx={{
                                         color: 'text.secondary',
                                         textTransform: 'capitalize',
@@ -262,7 +269,8 @@ const DrawerContent = () => {
                                         Photos
                                     </Button>
                                 </Link>
-                                <Link  onClick={() => dispatch(UI_ACTION_CREATORS.closeDrawer())} to="/" style={{textDecoration: 'none'}}>
+                                <Link onClick={() => dispatch(UI_ACTION_CREATORS.closeDrawer())}
+                                      to="/media/publications" style={{textDecoration: 'none'}}>
                                     <Button size="small" sx={{
                                         color: 'text.secondary',
                                         textTransform: 'capitalize',
