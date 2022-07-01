@@ -24,9 +24,9 @@ const lightTheme = createTheme({
             main: '#ffd300'
         },
         light: {
-            secondary: '#228C2226',
+            secondary: '#228C224D',
             primary: '#0000004C',
-            accent: '#FFD30026'
+            accent: '#FFD3004D'
         },
         action: {
             active: '#b90e0a'

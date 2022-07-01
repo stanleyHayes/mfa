@@ -23,6 +23,12 @@ import EventsPage from "./pages/events/events-page";
 import NewsPage from "./pages/news/news-page";
 import NewsDetailPage from "./pages/news/news-detail-page";
 import EventDetailPage from "./pages/events/event-detail-page";
+import PressReleasePage from "./pages/others/press-release-page";
+import AnnouncementsPage from "./pages/others/announcements-page";
+import PublicationsPage from "./pages/media/publications-page";
+import PhotosPage from "./pages/media/photos-page";
+import VideosPage from "./pages/media/videos-page";
+import VacanciesPage from "./pages/others/vacancies-page";
 
 function App() {
     const {themeVariant} = useSelector(selectUI);
@@ -98,6 +104,42 @@ function App() {
                 <Route
                     element={<EventDetailPage/>}
                     path="/events/:eventID"
+                    exact={true}
+                />
+
+                <Route
+                    element={<PressReleasePage/>}
+                    path="/press-release/"
+                    exact={true}
+                />
+
+                <Route
+                    element={<AnnouncementsPage/>}
+                    path="/announcements/"
+                    exact={true}
+                />
+
+                <Route
+                    element={<PublicationsPage/>}
+                    path="/media/publications/"
+                    exact={true}
+                />
+
+                <Route
+                    element={<PhotosPage/>}
+                    path="/media/photos"
+                    exact={true}
+                />
+
+                <Route
+                    element={<VideosPage/>}
+                    path="/media/videos"
+                    exact={true}
+                />
+
+                <Route
+                    element={<VacanciesPage/>}
+                    path="/vacancies/"
                     exact={true}
                 />
             </Routes>

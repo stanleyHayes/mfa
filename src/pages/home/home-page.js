@@ -40,7 +40,6 @@ const HomePage = () => {
     const {news, newsLoading, newsError} = useSelector(selectNews);
     const {events, eventsLoading, eventsError} = useSelector(selectEvent);
 
-    console.log(news)
     return (
         <Layout>
             <Box sx={{mt: 1.8}}>
@@ -243,7 +242,7 @@ const HomePage = () => {
                     display: 'flex',
                     alignItems: 'center'
                 }}>
-                <Container>
+                <Container maxWidth="xl">
                     <Typography
                         variant="h5"
                         sx={{color: 'text.primary', mb: 4, textTransform: 'uppercase', fontWeight: 700}}>
@@ -268,7 +267,9 @@ const HomePage = () => {
                                                 <Button
                                                     size="small"
                                                     sx={{textTransform: 'capitalize'}}
-                                                    variant="outlined"
+                                                    disableElevation={true}
+                                                    color="primary"
+                                                    variant="contained"
                                                     endIcon={<ChevronRight/>}>
                                                     Read More
                                                 </Button>
@@ -281,14 +282,16 @@ const HomePage = () => {
                         <Grid item={true} xs={12} md={6} lg={3}>
                             <Card elevation={0} sx={{height: '100%'}}>
                                 <CardContent>
-                                    <CardMedia component="img" src={kwaku}
-                                               sx={{
-                                                   height: 200,
-                                                   borderRadius: 1,
-                                                   mb: 2,
-                                                   objectPosition: 'top',
-                                                   objectFit: 'cover'
-                                               }}/>
+                                    <CardMedia
+                                        component="img"
+                                        src={kwaku}
+                                        sx={{
+                                            height: 200,
+                                            borderRadius: 1,
+                                            mb: 2,
+                                            objectPosition: 'top',
+                                            objectFit: 'cover'
+                                        }}/>
                                     <Stack direction="column" spacing={2}>
                                         <Typography align="center" gutterBottom={true} variant="body1"
                                                     sx={{color: 'text.primary'}}>
@@ -303,7 +306,9 @@ const HomePage = () => {
                                                 <Button
                                                     size="small"
                                                     sx={{textTransform: 'capitalize'}}
-                                                    variant="outlined"
+                                                    disableElevation={true}
+                                                    color="primary"
+                                                    variant="contained"
                                                     endIcon={<ChevronRight/>}>
                                                     Read More
                                                 </Button>
@@ -326,8 +331,11 @@ const HomePage = () => {
                                             objectFit: 'cover'
                                         }}/>
                                     <Stack direction="column" spacing={2}>
-                                        <Typography align="center" gutterBottom={true} variant="body1"
-                                                    sx={{color: 'text.primary'}}>
+                                        <Typography
+                                            align="center"
+                                            gutterBottom={true}
+                                            variant="body1"
+                                            sx={{color: 'text.primary'}}>
                                             Hon. Thomas Mbomba ,MP
                                         </Typography>
                                         <Typography align="center" variant="body2" sx={{color: 'text.secondary'}}>
@@ -337,9 +345,11 @@ const HomePage = () => {
                                         <Stack direction="row" justifyContent="flex-end">
                                             <Link to="/" style={{textDecoration: 'none'}}>
                                                 <Button
+                                                    disableElevation={true}
+                                                    color="primary"
+                                                    variant="contained"
                                                     size="small"
                                                     sx={{textTransform: 'capitalize'}}
-                                                    variant="outlined"
                                                     endIcon={<ChevronRight/>}>
                                                     Read More
                                                 </Button>
@@ -352,14 +362,16 @@ const HomePage = () => {
                         <Grid item={true} xs={12} md={6} lg={3}>
                             <Card elevation={0} sx={{height: '100%'}}>
                                 <CardContent>
-                                    <CardMedia component="img" src={ramses}
-                                               sx={{
-                                                   height: 200,
-                                                   borderRadius: 1,
-                                                   mb: 2,
-                                                   objectPosition: 'top',
-                                                   objectFit: 'cover'
-                                               }}/>
+                                    <CardMedia
+                                        component="img"
+                                        src={ramses}
+                                        sx={{
+                                            height: 200,
+                                            borderRadius: 1,
+                                            mb: 2,
+                                            objectPosition: 'top',
+                                            objectFit: 'cover'
+                                        }}/>
                                     <Stack direction="column" spacing={2}>
                                         <Typography align="center" gutterBottom={true} variant="body1"
                                                     sx={{color: 'text.primary'}}>
@@ -374,7 +386,9 @@ const HomePage = () => {
                                                 <Button
                                                     size="small"
                                                     sx={{textTransform: 'capitalize'}}
-                                                    variant="outlined"
+                                                    disableElevation={true}
+                                                    color="primary"
+                                                    variant="contained"
                                                     endIcon={<ChevronRight/>}>
                                                     Read More
                                                 </Button>
@@ -395,7 +409,7 @@ const HomePage = () => {
                     display: 'flex',
                     alignItems: 'center'
                 }}>
-                <Container>
+                <Container maxWidth="xl">
                     <Typography
                         variant="h5"
                         sx={{color: 'text.primary', mb: 4, textTransform: 'uppercase', fontWeight: 700}}>
@@ -422,7 +436,7 @@ const HomePage = () => {
                     alignItems: 'center'
                 }}>
                 {newsLoading && <LinearProgress variant="query" color="secondary"/>}
-                <Container>
+                <Container maxWidth="xl">
                     <Typography
                         variant="h5"
                         sx={{color: 'text.primary', mb: 4, textTransform: 'uppercase', fontWeight: 700}}>
@@ -451,10 +465,10 @@ const HomePage = () => {
                     )}
 
                     {news && news.length > 0 && (
-                        <Grid sx={{mb: 6}} container={true} spacing={2}>
+                        <Grid sx={{mb: 6}} container={true} spacing={4}>
                             {news && news.slice(0, 6).map(newsItem => {
                                 return (
-                                    <Grid key={newsItem._id} item={true} xs={12} md={6} lg={4}>
+                                    <Grid key={newsItem._id} item={true} xs={12} md={4} lg={3}>
                                         <NewsItem newsItem={newsItem}/>
                                     </Grid>
                                 )
@@ -486,7 +500,7 @@ const HomePage = () => {
                     alignItems: 'center'
                 }}>
                 {eventsLoading && <LinearProgress variant="query" color="secondary"/>}
-                <Container>
+                <Container maxWidth="xl">
                     <Typography
                         variant="h5"
                         sx={{color: 'text.primary', mb: 4, textTransform: 'uppercase', fontWeight: 700}}>
@@ -514,7 +528,7 @@ const HomePage = () => {
                     )}
 
                     {events?.events?.length > 0 && (
-                        <Grid container={true} spacing={2}>
+                        <Grid container={true} spacing={4}>
                             {events?.slice(6)?.map(event => {
                                 return (
                                     <Grid key={event._id} item={true} xs={12} md={4} lg={3}>
@@ -534,7 +548,7 @@ const HomePage = () => {
                     display: 'flex',
                     alignItems: 'center'
                 }}>
-                <Container>
+                <Container maxWidth="xl">
                     <Typography
                         variant="h5"
                         sx={{color: 'text.primary', mb: 4, textTransform: 'uppercase', fontWeight: 700}}>

@@ -1,15 +1,17 @@
 import {createSlice} from "@reduxjs/toolkit";
+import {MFA_CONSTANTS} from "../../../utils/constants";
 
 const uiSlice = createSlice({
     name: 'ui',
     initialState: {
-        themeVariant: 'dark',
+        themeVariant: 'light',
         drawerOpen: false,
         viewMode: 'grid'
     },
     reducers: {
         toggleTheme: (state) => {
-            state.themeVariant = state.themeVariant === 'light' ? 'dark': 'light'
+            localStorage.setItem(MFA_CONSTANTS.MFA_THEME_VARIANT, JSON.stringify(state.themeVariant === 'light' ? 'dark' : 'light'));
+            state.themeVariant = state.themeVariant === 'light' ? 'dark' : 'light'
         },
         openDrawer: (state) => {
             state.drawerOpen = true;
@@ -18,7 +20,8 @@ const uiSlice = createSlice({
             state.drawerOpen = false;
         },
         toggleViewMode: (state) => {
-            state.viewMode = state.viewMode === 'grid' ? 'list': 'grid'
+            localStorage.setItem(MFA_CONSTANTS.MFA_VIEW_MODE, JSON.stringify(state.viewMode === 'grid' ? 'list' : 'grid'));
+            state.viewMode = state.viewMode === 'grid' ? 'list' : 'grid'
         },
     }
 });

@@ -73,7 +73,7 @@ const DesktopFooter = () => {
                         </Typography>
                         <Divider variant="fullWidth" sx={{my: 2}}/>
                         <Stack direction="column" spacing={1}>
-                            <Link to="/press" style={{textDecoration: 'none'}}>
+                            <Link to="/press-release" style={{textDecoration: 'none'}}>
                                 <Button size="small" sx={{
                                     color: 'text.secondary',
                                     textTransform: 'capitalize',

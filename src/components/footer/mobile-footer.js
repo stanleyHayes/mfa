@@ -88,7 +88,7 @@ const MobileFooter = () => {
                     </AccordionSummary>
                     <AccordionDetails>
                         <Stack direction="column" spacing={1}>
-                            <Link to="/press" style={{textDecoration: 'none'}}>
+                            <Link to="/press-release" style={{textDecoration: 'none'}}>
                                 <Button size="small" sx={{
                                     color: 'text.secondary',
                                     textTransform: 'capitalize',
