@@ -62,7 +62,7 @@ const DesktopNavBar = () => {
                                 textTransform: 'uppercase',
                                 color: pathname.startsWith('/foreign-policies') ? 'text.primary' : 'text.secondary'
                             }}
-                            size="large"
+                            size="small"
                             variant="text">
                             Foreign Policies
                         </Button>
@@ -79,7 +79,7 @@ const DesktopNavBar = () => {
                                 textTransform: 'uppercase',
                                 color: pathname.startsWith('/about') ? 'text.primary' : 'text.secondary'
                             }}
-                            size="large"
+                            size="small"
                             variant="text">
                             About Us
                         </Button>
@@ -211,7 +211,7 @@ const DesktopNavBar = () => {
                                     textTransform: 'capitalize'
                                 }}
                                 disableElevation={true}
-                                size="large">
+                                size="small">
                                 Online Passport Application
                             </Button>
                         </MUILink>

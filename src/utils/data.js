@@ -1,3 +1,9 @@
+import africa from "./../assets/images/africa.png";
+import america from "./../assets/images/americas.png";
+import asia from "./../assets/images/asia.png";
+import europe from "./../assets/images/europe.png";
+import middleEast from "./../assets/images/middle-east.png";
+
 const functionalAreas = [
     "Policy Planning, Monitoring and Evaluation",
     "Administration",
@@ -26,7 +32,17 @@ const globalAreas = [
     "Middle East and Asia - 11",
     "Americas - 6"
 ]
+
+const missions = [
+    {area: 'Africa', link: '', image: africa},
+    {area: 'Europe', link: '', image: europe},
+    {area: 'Middle East', link: '', image: middleEast},
+    {area: 'America', link: '', image: america},
+    {area: 'Asia', link: '', image: asia},
+];
+
 export const DATA = {
     FUNCTIONAL_AREAS: functionalAreas,
-    GLOBAL_AREAS: globalAreas
+    GLOBAL_AREAS: globalAreas,
+    MISSIONS: missions
 }

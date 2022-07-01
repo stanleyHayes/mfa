@@ -18,7 +18,7 @@ const MobileFooter = () => {
         <Box sx={{backgroundColor: 'background.paper', py: 2}}>
             <Container>
                 <Accordion sx={{backgroundColor: 'background.paper'}} variant="elevation" elevation={0}>
-                    <AccordionSummary expandIcon={<ChevronRight/>}>
+                    <AccordionSummary expandIcon={<ChevronRight color="primary"/>}>
                         <Typography variant="body1" sx={{color: 'text.primary', fontWeight: 'bold'}}>
                             Quick Links
                         </Typography>
@@ -81,7 +81,7 @@ const MobileFooter = () => {
                     </AccordionDetails>
                 </Accordion>
                 <Accordion sx={{backgroundColor: 'background.paper'}} variant="elevation" elevation={0}>
-                    <AccordionSummary expandIcon={<ChevronRight/>}>
+                    <AccordionSummary expandIcon={<ChevronRight color="primary"/>}>
                         <Typography variant="body1" sx={{color: 'text.primary', fontWeight: 'bold'}}>
                             Public
                         </Typography>
@@ -137,7 +137,7 @@ const MobileFooter = () => {
                     </AccordionDetails>
                 </Accordion>
                 <Accordion sx={{backgroundColor: 'background.paper'}} variant="elevation" elevation={0}>
-                    <AccordionSummary expandIcon={<ChevronRight/>}>
+                    <AccordionSummary expandIcon={<ChevronRight color="primary"/>}>
                         <Typography variant="body1" sx={{color: 'text.primary', fontWeight: 'bold'}}>
                             Media
                         </Typography>
@@ -175,7 +175,7 @@ const MobileFooter = () => {
                     </AccordionDetails>
                 </Accordion>
                 <Accordion sx={{backgroundColor: 'background.paper'}} variant="elevation" elevation={0}>
-                    <AccordionSummary expandIcon={<ChevronRight/>}>
+                    <AccordionSummary expandIcon={<ChevronRight color="primary"/>}>
                         <Typography variant="body1" sx={{color: 'text.primary', fontWeight: 'bold'}}>
                             About Ghana
                         </Typography>

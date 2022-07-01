@@ -26,7 +26,7 @@ const NavLink = ({path, label, active}) => {
                     color: active ? 'text.primary' : 'text.secondary',
                     justifyContent: 'flex-start'
                 }}
-                size="large">
+                size="small">
                 {label}
             </Button>
         </Link>

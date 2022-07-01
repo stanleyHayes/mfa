@@ -1,9 +1,10 @@
 import {Link} from "react-router-dom";
-import {Button} from "@mui/material";
+import {Button, Stack} from "@mui/material";
 import {useDispatch} from "react-redux";
 import {UI_ACTION_CREATORS} from "../../redux/features/ui/ui-slice";
+import {ChevronRight} from "@mui/icons-material";
 
-const MobileNavLink = ({path, label, active, icon}) => {
+const MobileNavLink = ({path, label, active}) => {
 
     const dispatch = useDispatch();
 
@@ -12,20 +13,32 @@ const MobileNavLink = ({path, label, active, icon}) => {
     }
 
     return (
-        <Link onClick={handleClick} to={path} style={{textDecoration: 'none'}}>
-            <Button
-                startIcon={icon}
-                fullWidth={true}
-                variant="text"
+        <Link onClick={handleClick} to={path} style={{textDecoration: 'none',}}>
+            <Stack
                 sx={{
-                    backgroundColor: active ? 'light.secondary' : false,
-                    textTransform: 'uppercase',
-                    color: active ? 'text.primary' : 'text.secondary',
-                    justifyContent: 'flex-start',
+                    paddingRight: 2,
+                    backgroundColor: active ? 'light.primary' : false,
+                    borderRadius: 1
                 }}
-                size="large">
-                {label}
-            </Button>
+                direction="row"
+                alignItems="center"
+                justifyContent="space-between">
+                <Button
+                    fullWidth={true}
+                    variant="text"
+                    sx={{
+                        textTransform: 'capitalize',
+                        color: active ? 'text.primary' : 'text.primary',
+                        justifyContent: 'flex-start',
+                        padding: 1.2,
+                        fontWeight: 'bold'
+                    }}
+                    size="small">
+                    {label}
+                </Button>
+                <ChevronRight color="primary"/>
+            </Stack>
+
         </Link>
     )
 }

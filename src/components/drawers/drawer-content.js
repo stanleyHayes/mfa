@@ -1,18 +1,19 @@
-import {Accordion, AccordionDetails, AccordionSummary, Box, Button, Container, Stack} from "@mui/material";
-import MobileNavLink from "../shared/mobile-nav-link";
 import {
-    ContactPage,
-    ContactPageOutlined,
-    Home,
-    HomeOutlined,
-    Info,
-    InfoOutlined,
-    KeyboardArrowUp,
-    MiscellaneousServices,
-    MiscellaneousServicesOutlined
-} from "@mui/icons-material";
+    Accordion,
+    AccordionDetails,
+    AccordionSummary,
+    Box,
+    Button,
+    Container,
+    Link as MUILink,
+    Stack,
+    Typography
+} from "@mui/material";
+import MobileNavLink from "../shared/mobile-nav-link";
+import {ChevronRight, OpenInNew} from "@mui/icons-material";
 import {useLocation} from "react-router";
 import NavLink from "../shared/nav-link";
+import {Link} from "react-router-dom";
 
 const DrawerContent = () => {
 
@@ -21,29 +22,30 @@ const DrawerContent = () => {
     return (
         <Box sx={{py: 4}}>
             <Container>
-                <Stack direction="column">
+                <Stack direction="column" spacing={1}>
                     <MobileNavLink
                         active={pathname === '/'}
-                        icon={pathname === '/' ? <Home/> : <HomeOutlined/>}
                         path="/" label="Home"
                     />
+
+                    <MobileNavLink
+                        active={pathname === '/services'}
+                        path="/services" label="Services"
+                    />
+
+                    <MobileNavLink
+                        active={pathname === '/contact'}
+                        path="/" label="Contact"
+                    />
+
                     <Accordion variant="elevation" elevation={0}>
-                        <AccordionSummary sx={{marginLeft: -2}} expandIcon={<KeyboardArrowUp/>}>
-                            <Button
-                                startIcon={pathname === '/foreign-policies' ? <Home/> : <HomeOutlined/>}
-                                sx={{
-                                    backgroundColor: pathname.startsWith('/foreign-policies') ? 'light.accent' : false,
-                                    textTransform: 'uppercase',
-                                    color: pathname.startsWith('/foreign-policies') ? 'text.primary' : 'text.secondary'
-                                }}
-                                size="large"
-                                variant="text">
+                        <AccordionSummary sx={{marginLeft: -1}} expandIcon={<ChevronRight color="primary"/>}>
+                            <Typography variant="body2" sx={{color: 'text.primary', fontWeight: 'bold'}}>
                                 Foreign Policies
-                            </Button>
+                            </Typography>
                         </AccordionSummary>
                         <AccordionDetails>
                             <Stack direction="column">
-
                                 <NavLink
                                     label="Foreign Policies"
                                     active={pathname === 'foreign-policies/ghana-foreign-policy'}
@@ -71,18 +73,10 @@ const DrawerContent = () => {
                         </AccordionDetails>
                     </Accordion>
                     <Accordion variant="elevation" elevation={0}>
-                        <AccordionSummary sx={{marginLeft: -2}} expandIcon={<KeyboardArrowUp/>}>
-                            <Button
-                                startIcon={pathname === '/about' ? <Info/> : <InfoOutlined/>}
-                                sx={{
-                                    backgroundColor: pathname.startsWith('/about') ? 'light.accent' : false,
-                                    textTransform: 'uppercase',
-                                    color: pathname.startsWith('/about') ? 'text.primary' : 'text.secondary'
-                                }}
-                                size="large"
-                                variant="text">
+                        <AccordionSummary sx={{marginLeft: -1}} expandIcon={<ChevronRight color="primary"/>}>
+                            <Typography variant="body2" sx={{color: 'text.primary', fontWeight: 'bold'}}>
                                 About Us
-                            </Button>
+                            </Typography>
                         </AccordionSummary>
                         <AccordionDetails>
                             <Stack direction="column">
@@ -116,22 +110,206 @@ const DrawerContent = () => {
                                     active={pathname === '/about/the-chief-directors-profile'}
                                     path="/about/the-chief-directors-profile"
                                 />
-
                             </Stack>
                         </AccordionDetails>
                     </Accordion>
-
-                    <MobileNavLink
-                        active={pathname === '/services'}
-                        icon={pathname === '/services' ? <MiscellaneousServices/> : <MiscellaneousServicesOutlined/>}
-                        path="/services" label="Services"
-                    />
-
-                    <MobileNavLink
-                        active={pathname === '/contact'}
-                        icon={pathname === '/contact' ? <ContactPage/> : <ContactPageOutlined/>}
-                        path="/" label="Contact"
-                    />
+                    <Accordion sx={{backgroundColor: 'background.paper'}} variant="elevation" elevation={0}>
+                        <AccordionSummary expandIcon={<ChevronRight color="primary"/>}>
+                            <Typography variant="body2" sx={{color: 'text.primary', fontWeight: 'bold'}}>
+                                Quick Links
+                            </Typography>
+                        </AccordionSummary>
+                        <AccordionDetails>
+                            <Stack direction="column" spacing={1}>
+                                <MUILink href="https://passport.mfa.gov.gh/" target="_blank" underline="none">
+                                    <Button endIcon={<OpenInNew/>} size="small"
+                                            sx={{
+                                                color: 'text.secondary',
+                                                textTransform: 'capitalize',
+                                                justifyContent: 'flex-start'
+                                            }}>
+                                        Online Passport Application
+                                    </Button>
+                                </MUILink>
+                                <MUILink href="https://www.bog.gov.gh/" target="_blank" underline="none">
+                                    <Button endIcon={<OpenInNew/>} size="small"
+                                            sx={{
+                                                color: 'text.secondary',
+                                                textTransform: 'capitalize',
+                                                justifyContent: 'flex-start'
+                                            }}>
+                                        Bank of Ghana
+                                    </Button>
+                                </MUILink>
+                                <MUILink href="http://www.ghana.travel/" target="_blank" underline="none">
+                                    <Button endIcon={<OpenInNew/>} size="small"
+                                            sx={{
+                                                color: 'text.secondary',
+                                                textTransform: 'capitalize',
+                                                justifyContent: 'flex-start'
+                                            }}>
+                                        GTA
+                                    </Button>
+                                </MUILink>
+                                <MUILink href="http://www.gfzb.com.gh/" target="_blank" underline="none">
+                                    <Button endIcon={<OpenInNew/>} size="small"
+                                            sx={{
+                                                color: 'text.secondary',
+                                                textTransform: 'capitalize',
+                                                justifyContent: 'flex-start'
+                                            }}>
+                                        GFZB
+                                    </Button>
+                                </MUILink>
+                                <MUILink
+                                    href="https://www.thisnation.com/politics/economy/ghana-investment-promotion-centre-gipc/"
+                                    target="_blank" underline="none">
+                                    <Button endIcon={<OpenInNew/>} size="small"
+                                            sx={{
+                                                color: 'text.secondary',
+                                                textTransform: 'capitalize',
+                                                justifyContent: 'flex-start'
+                                            }}>
+                                        GIPC
+                                    </Button>
+                                </MUILink>
+                            </Stack>
+                        </AccordionDetails>
+                    </Accordion>
+                    <Accordion sx={{backgroundColor: 'background.paper'}} variant="elevation" elevation={0}>
+                        <AccordionSummary expandIcon={<ChevronRight color="primary"/>}>
+                            <Typography variant="body2" sx={{color: 'text.primary', fontWeight: 'bold'}}>
+                                Public
+                            </Typography>
+                        </AccordionSummary>
+                        <AccordionDetails>
+                            <Stack direction="column" spacing={1}>
+                                <Link to="/" style={{textDecoration: 'none'}}>
+                                    <Button size="small" sx={{
+                                        color: 'text.secondary',
+                                        textTransform: 'capitalize',
+                                        justifyContent: 'flex-start'
+                                    }}>
+                                        Press Release
+                                    </Button>
+                                </Link>
+                                <Link to="/" style={{textDecoration: 'none'}}>
+                                    <Button size="small" sx={{
+                                        color: 'text.secondary',
+                                        textTransform: 'capitalize',
+                                        justifyContent: 'flex-start'
+                                    }}>
+                                        Announcement
+                                    </Button>
+                                </Link>
+                                <Link to="/" style={{textDecoration: 'none'}}>
+                                    <Button size="small" sx={{
+                                        color: 'text.secondary',
+                                        textTransform: 'capitalize',
+                                        justifyContent: 'flex-start'
+                                    }}>
+                                        Events
+                                    </Button>
+                                </Link>
+                                <Link to="/" style={{textDecoration: 'none'}}>
+                                    <Button size="small" sx={{
+                                        color: 'text.secondary',
+                                        textTransform: 'capitalize',
+                                        justifyContent: 'flex-start'
+                                    }}>
+                                        News
+                                    </Button>
+                                </Link>
+                                <Link to="/" style={{textDecoration: 'none'}}>
+                                    <Button size="small" sx={{
+                                        color: 'text.secondary',
+                                        textTransform: 'capitalize',
+                                        justifyContent: 'flex-start'
+                                    }}>
+                                        Vacancies
+                                    </Button>
+                                </Link>
+                            </Stack>
+                        </AccordionDetails>
+                    </Accordion>
+                    <Accordion sx={{backgroundColor: 'background.paper'}} variant="elevation" elevation={0}>
+                        <AccordionSummary expandIcon={<ChevronRight color="primary"/>}>
+                            <Typography variant="body2" sx={{color: 'text.primary', fontWeight: 'bold'}}>
+                                Media
+                            </Typography>
+                        </AccordionSummary>
+                        <AccordionDetails>
+                            <Stack direction="column" spacing={1}>
+                                <Link to="/" style={{textDecoration: 'none'}}>
+                                    <Button size="small" sx={{
+                                        color: 'text.secondary',
+                                        textTransform: 'capitalize',
+                                        justifyContent: 'flex-start'
+                                    }}>
+                                        Videos
+                                    </Button>
+                                </Link>
+                                <Link to="/" style={{textDecoration: 'none'}}>
+                                    <Button size="small" sx={{
+                                        color: 'text.secondary',
+                                        textTransform: 'capitalize',
+                                        justifyContent: 'flex-start'
+                                    }}>
+                                        Photos
+                                    </Button>
+                                </Link>
+                                <Link to="/" style={{textDecoration: 'none'}}>
+                                    <Button size="small" sx={{
+                                        color: 'text.secondary',
+                                        textTransform: 'capitalize',
+                                        justifyContent: 'flex-start'
+                                    }}>
+                                        Publications
+                                    </Button>
+                                </Link>
+                            </Stack>
+                        </AccordionDetails>
+                    </Accordion>
+                    <Accordion sx={{backgroundColor: 'background.paper'}} variant="elevation" elevation={0}>
+                        <AccordionSummary expandIcon={<ChevronRight color="primary"/>}>
+                            <Typography variant="body2" sx={{color: 'text.primary', fontWeight: 'bold'}}>
+                                About Ghana
+                            </Typography>
+                        </AccordionSummary>
+                        <AccordionDetails>
+                            <Stack direction="column" spacing={1}>
+                                <Link to="/" style={{textDecoration: 'none'}}>
+                                    <Button size="small" sx={{
+                                        color: 'text.secondary',
+                                        textTransform: 'capitalize',
+                                        justifyContent: 'flex-start'
+                                    }}>
+                                        Profile
+                                    </Button>
+                                </Link>
+                                <Link to="/" style={{textDecoration: 'none'}}>
+                                    <Button
+                                        size="small"
+                                        sx={{
+                                            color: 'text.secondary',
+                                            textTransform: 'capitalize',
+                                            justifyContent: 'flex-start'
+                                        }}>
+                                        Economy
+                                    </Button>
+                                </Link>
+                                <Link to="/" style={{textDecoration: 'none'}}>
+                                    <Button size="small" sx={{
+                                        color: 'text.secondary',
+                                        textTransform: 'capitalize',
+                                        justifyContent: 'flex-start'
+                                    }}>
+                                        Regions
+                                    </Button>
+                                </Link>
+                            </Stack>
+                        </AccordionDetails>
+                    </Accordion>
                 </Stack>
             </Container>
         </Box>
