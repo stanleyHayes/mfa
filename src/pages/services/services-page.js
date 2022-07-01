@@ -80,14 +80,14 @@ const ServicesPage = () => {
                             <Typography gutterBottom={true} variant="h5" sx={{color: 'text.primary'}}>
                                 PASSPORT
                             </Typography>
-                            <Typography gutterBottom={true} variant="body1" sx={{color: 'text.secondary'}}>
+                            <Typography gutterBottom={true} variant="body2" sx={{color: 'text.secondary'}}>
                                 The Passports Office, a bureau of the Ministry is responsible for the issue of passports
                                 and other travel documents of Ghana to Ghanaian Citizens. In accordance with the
                                 Passports and Travel Certificate Decree 1967, (NLCD 155), the authority for the issue of
                                 passports and other travel documents of Ghana is vested in the Ministry of Foreign
                                 Affairs and Regional Integration.
                             </Typography>
-                            <Typography variant="body1" sx={{color: 'text.secondary'}}>
+                            <Typography variant="body2" sx={{color: 'text.secondary'}}>
                                 The Passport Office is responsible for the issue of passports and other travel documents
                                 to Ghanaians, whose applications have been approved. The office also provides files and
                                 documents in respect of passports under investigation by the Interpol, the Bureau of
@@ -112,7 +112,7 @@ const ServicesPage = () => {
                             <Typography gutterBottom={true} variant="h5" sx={{color: 'text.primary'}}>
                                 PROTOCOL
                             </Typography>
-                            <Typography variant="body1" sx={{color: 'text.secondary'}}>
+                            <Typography variant="body2" sx={{color: 'text.secondary'}}>
                                 Facilitates the conduct of relations between the Government and the diplomatic and
                                 consular missions located in and accredited to Ghana, ensures that members of the
                                 diplomatic and consular corps understand and comply with local laws and regulations,
@@ -163,7 +163,7 @@ const ServicesPage = () => {
                             <Typography gutterBottom={true} variant="h5" sx={{color: 'text.primary'}}>
                                 LEGAL AND CONSULAR
                             </Typography>
-                            <Typography variant="body1" sx={{color: 'text.secondary'}}>
+                            <Typography variant="body2" sx={{color: 'text.secondary'}}>
                                 Provides legal advice to the Ministry, advises the government, implements Ghana policy
                                 and participates in the negotiation and interpretation of international agreements. They
                                 also prepare instruments of ratification, co-ordinates issues arising from Ghana,
@@ -190,18 +190,18 @@ const ServicesPage = () => {
                             <Typography gutterBottom={true} variant="h5" sx={{color: 'text.primary'}}>
                                 ACCRA INTERNATIONAL CONFERENCE CENTRE (AICC)
                             </Typography>
-                            <Typography gutterBottom={true} variant="body1" sx={{color: 'text.secondary'}}>
+                            <Typography gutterBottom={true} variant="body2" sx={{color: 'text.secondary'}}>
                                 The Accra International Conference Centre was built in 1991 to host the Tenth
                                 Ministerial Meeting of the Non-Aligned Movement. It has since hosted major conferences
                                 and summits by U.N. organisations, such as the World Health Organisation, the Food and
                                 Agriculture Organisation, as well as regional organisations such as ECOWAS.
                             </Typography>
-                            <Typography gutterBottom={true} variant="body1" sx={{color: 'text.secondary'}}>
+                            <Typography gutterBottom={true} variant="body2" sx={{color: 'text.secondary'}}>
                                 The Accra International Conference Centre, (AICC), has six conference halls. These are;
                                 the Main Hall or Conference Auditorium, two committee Halls, three Meeting Rooms and a
                                 Foyer
                             </Typography>
-                            <Typography variant="body1" sx={{color: 'text.secondary'}}>
+                            <Typography variant="body2" sx={{color: 'text.secondary'}}>
                                 The main Auditorium provides seating or up to 1,800 people. The gallery has 132 seats,
                                 whiles 182 seats have been reserved for the press. The multi-purpose hall can also be
                                 used for musical shows, concerts, lectures, theatrical performances and other public
@@ -250,7 +250,7 @@ const ServicesPage = () => {
                             <Typography gutterBottom={true} variant="h5" sx={{color: 'text.primary'}}>
                                 DIASPORA
                             </Typography>
-                            <Typography variant="body1" sx={{color: 'text.secondary'}}>
+                            <Typography variant="body2" sx={{color: 'text.secondary'}}>
                                 The Diaspora Affairs Unit (DAU) was established pursuant to a Presidential directive and
                                 it is responsible for the national diaspora engagement and migration matters within the
                                 Ministry. They work to establish a comprehensive database of Ghanaians abroad which is
