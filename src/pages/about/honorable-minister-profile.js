@@ -77,7 +77,7 @@ const HonorableMinisterProfile = () => {
                         </Grid>
                         <Grid item={true} xs={12} md={8}>
                             <Stack direction="column" spacing={2}>
-                                <Typography variant="body1" sx={{color: 'text.secondary'}}>
+                                <Typography variant="body2" sx={{color: 'text.secondary'}}>
                                     Hon. Shirley Ayorkor Botchwey has served as Minister for Foreign Affairs and
                                     Regional
                                     Integration of Ghana since 10th January 2017. As Foreign Minister, she has led
@@ -102,7 +102,7 @@ const HonorableMinisterProfile = () => {
                                     Guinea and
                                     Burkina Faso and as a member of the ECOWAS Mediation Mission to Mali.
                                 </Typography>
-                                <Typography variant="body1" sx={{color: 'text.secondary'}}>
+                                <Typography variant="body2" sx={{color: 'text.secondary'}}>
                                     Hon. Botchwey has extensive experience in diplomacy having served as a Deputy
                                     Minister for
                                     Foreign Affairs in the last term of President John Agyekum Kufuor, from
@@ -127,7 +127,7 @@ const HonorableMinisterProfile = () => {
                         </Grid>
                     </Grid>
                     <Stack direction="column" spacing={2}>
-                        <Typography variant="body1" sx={{color: 'text.secondary'}}>
+                        <Typography variant="body2" sx={{color: 'text.secondary'}}>
                             Hon. Botchwey previously served as Deputy Minister for Information (2005-2006), and
                             subsequently as the Deputy Minister for Trade and Industry (2007-2008) in the first term of
                             President Kufuor from 2000-2004. Hon. Botchwey was her party’s spokesperson on Foreign
@@ -137,7 +137,7 @@ const HonorableMinisterProfile = () => {
                         </Typography>
 
 
-                        <Typography variant="body1" sx={{color: 'text.secondary'}}>
+                        <Typography variant="body2" sx={{color: 'text.secondary'}}>
                             A member of the ECOWAS Parliament from 2013 – 2017, Hon. Shirley Ayorkor Botchwey worked
                             with her colleagues to assist the Community Parliament in its advisory role in considering
                             matters concerning the region, particularly on issues relating to fundamental human rights
@@ -146,7 +146,7 @@ const HonorableMinisterProfile = () => {
                         </Typography>
 
 
-                        <Typography variant="body1" sx={{color: 'text.secondary'}}>
+                        <Typography variant="body2" sx={{color: 'text.secondary'}}>
                             In the immediate past Parliament (2017 – 2021), she sat on the Communication as well as the
                             Gender and Children Committees of Parliament, where she worked with colleague members on
                             matters relating to communications generally as well as examining all issues related to
@@ -154,21 +154,21 @@ const HonorableMinisterProfile = () => {
                         </Typography>
 
 
-                        <Typography variant="body1" sx={{color: 'text.secondary'}}>
+                        <Typography variant="body2" sx={{color: 'text.secondary'}}>
                             As a four-term legislator, Hon. Botchwey represented the most populous constituency in the
                             country, Weija, in the Greater Accra Region for two terms until it was redemarcated. She
                             subsequently represented the Anyaa/Sowutuom constituency for two terms.
                         </Typography>
 
 
-                        <Typography variant="body1" sx={{color: 'text.secondary'}}>
+                        <Typography variant="body2" sx={{color: 'text.secondary'}}>
                             Before entering frontline politics, Hon. Shirley Ayorkor Botchwey ran a successful Marketing
                             and Communications Company and served as a consultant for the Ministry of Tourism. She
                             worked in various capacities with organizations such as Worldspace Ghana, the Divestiture
                             Implementation Committee, Glaxo Group Research and Hodge Recruitment.
                         </Typography>
 
-                        <Typography variant="body1" sx={{color: 'text.secondary'}}>
+                        <Typography variant="body2" sx={{color: 'text.secondary'}}>
                             Hon. Minister Botchwey holds an Executive MBA, (Project Management option), MA in Public
                             Communication, Bachelor of Laws Degree (LLB), a Diploma in Public Relations and Advertising
                             as well as a certificate in Marketing Management from the following institutions
@@ -178,7 +178,7 @@ const HonorableMinisterProfile = () => {
                             Kingdom (UK).
                         </Typography>
 
-                        <Typography variant="body1" sx={{color: 'text.secondary'}}>
+                        <Typography variant="body2" sx={{color: 'text.secondary'}}>
                             Hon. Botchwey is a member of the Ghana National Association of Alternative Dispute (ADR)
                             Practitioners. She has participated in numerous capacity-building programmes on leadership,
                             marketing, driving government performance and parliament and the rule of law, including at
@@ -186,7 +186,7 @@ const HonorableMinisterProfile = () => {
                             Africa, Parliament of Spain, The African Leadership Initiative/The Aspen Institute, and the
                             Ghana Institute of Management and Public Administration.
                         </Typography>
-                        <Typography variant="body1" sx={{color: 'text.secondary'}}>
+                        <Typography variant="body2" sx={{color: 'text.secondary'}}>
                             Hon. Shirley Ayorkor Botchwey is a mother of two.
                         </Typography>
                     </Stack>

@@ -32,7 +32,7 @@ const ThomasMbombaProfilePage = () => {
                                     PROFILE OF DEPUTY MINISTER FOR FOREIGN AFFAIRS AND REGIONAL INTEGRATION
                                     (ADMINISTRATION & FINANCE)
                                 </Typography>
-                                <Typography gutterBottom={true} variant="body1" sx={{color: 'text.secondary'}}>
+                                <Typography gutterBottom={true} variant="body2" sx={{color: 'text.secondary'}}>
                                     Honourable Thomas Mbomba is an astute politician with varied experiences. He is
                                     currently a Deputy Minister at the Ministry of Foreign Affairs and Regional
                                     Integration in charge of Administration and Finance and the Member of Parliament for
@@ -41,7 +41,7 @@ const ThomasMbombaProfilePage = () => {
                                     Works & Housing and Committee on people Holding Office of profit.
 
                                 </Typography>
-                                <Typography gutterBottom={true} variant="body1" sx={{color: 'text.secondary'}}>
+                                <Typography gutterBottom={true} variant="body2" sx={{color: 'text.secondary'}}>
                                     Before his appointment, he served as the District Chief Executive of the Tatale
                                     District Assembly from 2017-2020. Hon. Mbomba has worked in different capacities at
                                     the Ghana Post Company Limited as the Manager Transhipment Centre, Airport Accra
@@ -50,7 +50,7 @@ const ThomasMbombaProfilePage = () => {
 
                                 </Typography>
 
-                                <Typography gutterBottom={true} variant="body1" sx={{color: 'text.secondary'}}>
+                                <Typography gutterBottom={true} variant="body2" sx={{color: 'text.secondary'}}>
                                     He holds a certificate on Human Resource Management from the Institute of Human
                                     Resource Management Practitioners (2012-2013) Accra; a Master of Business
                                     Administration in Human Resource Management from the University of Ghana, Legon

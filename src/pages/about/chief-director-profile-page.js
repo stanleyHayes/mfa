@@ -33,13 +33,13 @@ const ChiefDirectorProfilePage = () => {
                             <Typography gutterBottom={true} variant="h5" sx={{color: 'text.primary'}}>
                                 AMBASSADOR RAMSES JOSEPH CLELAND (AG. CHIEF DIRECTOR)
                             </Typography>
-                            <Typography gutterBottom={true} variant="body1" sx={{color: 'text.secondary'}}>
+                            <Typography gutterBottom={true} variant="body2" sx={{color: 'text.secondary'}}>
                                 Ambassador Ramses Joseph Cleland is currently the Acting Chief Director of the Ministry
                                 of Foreign Affairs and Regional Integration of the Republic of Ghana. He was appointed
                                 in December 2021.
                             </Typography>
 
-                            <Typography gutterBottom={true} variant="body1" sx={{color: 'text.secondary'}}>
+                            <Typography gutterBottom={true} variant="body2" sx={{color: 'text.secondary'}}>
                                 Before his appointment Ambassador Cleland served as the Ambassador of Ghana to
                                 Switzerland and Permanent Representative to the United Nations in Geneva from 2017 to
                                 2021, he was also Ghana’s Ambassador to Austria and Permanent Representative to the UN
@@ -48,7 +48,7 @@ const ChiefDirectorProfilePage = () => {
                                 Ghana Missions in France, Brazil, Cote D’Ivoire, Ireland, United Kingdom and Togo.
                             </Typography>
 
-                            <Typography gutterBottom={true} variant="body1" sx={{color: 'text.secondary'}}>
+                            <Typography gutterBottom={true} variant="body2" sx={{color: 'text.secondary'}}>
                                 Ambassador Cleland received a Law Degree (LLB) from the University of London, UK and
                                 continued his law studies at BPP School of Law in London, 2011. He was called to the
                                 Ghana Bar as a Barrister and Solicitor of the Supreme Court of Ghana in 2017. He holds a
@@ -59,7 +59,7 @@ const ChiefDirectorProfilePage = () => {
                                 Human Rights and Humanitarian Law from the Graduate Institute of Geneva.
                             </Typography>
 
-                            <Typography gutterBottom={true} variant="body1" sx={{color: 'text.secondary'}}>
+                            <Typography gutterBottom={true} variant="body2" sx={{color: 'text.secondary'}}>
                                 Mr. Ramses J. Cleland was born on 25th August, 1963 in Cairo, Egypt. He is Married with
                                 four adult children. He loves reading, tennis, music (Piano, Guitar), and mountain
                                 climbing.
