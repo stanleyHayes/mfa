@@ -55,7 +55,7 @@ const NewsPage = () => {
         <Layout>
             <Box sx={{py: 8}}>
                 {newsLoading && <LinearProgress variant="query" color="secondary"/>}
-                <Container sx={{minHeight: '90vh'}}>
+                <Container sx={{minHeight: '70vh'}}>
                     {newsError && (
                         <Alert severity="error">
                             <AlertTitle>{newsError}</AlertTitle>

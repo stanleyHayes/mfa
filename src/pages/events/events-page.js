@@ -16,8 +16,8 @@ import {useDispatch, useSelector} from "react-redux";
 import {selectEvent} from "../../redux/features/events/events-slice";
 import {selectUI, UI_ACTION_CREATORS} from "../../redux/features/ui/ui-slice";
 import {GridOn, ListSharp} from "@mui/icons-material";
-import EventItem from "../../components/shared/event-item";
-import EventItemList from "../../components/shared/event-item-list";
+import Event from "../../components/shared/event";
+import EventList from "../../components/shared/event-list";
 import {useState} from "react";
 import {useLocation, useNavigate} from "react-router";
 import qs from "query-string";
@@ -55,7 +55,7 @@ const EventsPage = () => {
         <Layout>
             <Box sx={{py: 8}}>
                 {eventsLoading && <LinearProgress variant="query" color="secondary"/>}
-                <Container sx={{minHeight: '90vh'}}>
+                <Container sx={{minHeight: '60vh'}}>
                     {eventsError && (
                         <Alert severity="error">
                             <AlertTitle>{eventsError}</AlertTitle>
@@ -122,7 +122,7 @@ const EventsPage = () => {
                                 {events && events.map(eventsItem => {
                                     return (
                                         <Grid key={eventsItem._id} item={true} xs={12} md={6} lg={4}>
-                                            <EventItem eventsItem={eventsItem}/>
+                                            <Event eventsItem={eventsItem}/>
                                         </Grid>
                                     )
                                 })}
@@ -136,7 +136,7 @@ const EventsPage = () => {
                                 events && events.map(eventsItem => {
                                     return (
                                         <Grid key={eventsItem._id} item={true} xs={12} md={6} lg={4}>
-                                            <EventItem eventsItem={eventsItem}/>
+                                            <Event eventsItem={eventsItem}/>
                                         </Grid>
                                     )
                                 })
@@ -146,7 +146,7 @@ const EventsPage = () => {
                                     events && events.map(eventsItem => {
                                         return (
                                             <Grid key={eventsItem._id} item={true} xs={12}>
-                                                <EventItemList eventsItem={eventsItem}/>
+                                                <EventList eventsItem={eventsItem}/>
                                             </Grid>
                                         )
                                     })

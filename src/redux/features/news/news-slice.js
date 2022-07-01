@@ -5,7 +5,7 @@ const newsSlice = createSlice({
     name: 'news',
     initialState: {
         news: [...news],
-        singleNews: null,
+        singleNews: news[0],
         newsLoading: false,
         newsError: null,
         count: news.length
