@@ -7,7 +7,7 @@ const ContactPage = () => {
 
     return (
         <Layout>
-            <Box sx={{mt: 2, position: 'relative', height: '50vh'}}>
+            <Box sx={{mt: 1.8, position: 'relative', height: '50vh'}}>
                 <Box
                     sx={{
                         position: 'absolute',
@@ -60,7 +60,7 @@ const ContactPage = () => {
                 <Container>
                     <Grid container={true} spacing={4}>
                         <Grid item={true} xs={12} md={4}>
-                            <Card elevation={1} sx={{backgroundColor: 'background.paper', height: '100%'}}>
+                            <Card elevation={0} sx={{backgroundColor: 'background.paper', height: '100%'}}>
                                 <CardContent>
                                     <Stack direction="column" spacing={2}>
                                         <Typography
@@ -83,7 +83,7 @@ const ContactPage = () => {
                             </Card>
                         </Grid>
                         <Grid item={true} xs={12} md={4}>
-                            <Card elevation={1} sx={{backgroundColor: 'background.paper', height: '100%'}}>
+                            <Card elevation={0} sx={{backgroundColor: 'background.paper', height: '100%'}}>
                                 <CardContent>
                                     <Stack direction="column" spacing={2}>
                                         <Typography gutterBottom={true} variant="body1"
@@ -92,48 +92,73 @@ const ContactPage = () => {
                                         </Typography>
                                         <Stack direction="row" spacing={2} alignItems="center">
                                             <Call/>
-                                            <Typography gutterBottom={true} variant="body2"
-                                                        sx={{color: 'text.secondary'}}>
-                                                <Link href="tel://+233 30 299 9604" underline="none">
+
+                                            <Link href="tel://+233 30 299 9604" underline="none">
+                                                <Typography
+                                                    gutterBottom={true} variant="body2"
+                                                    sx={{color: 'text.secondary'}}>
                                                     +233 30 299 9604
-                                                </Link>
+                                                </Typography>
+                                            </Link>
+                                            <Typography
+                                                gutterBottom={true} variant="body2"
+                                                sx={{color: 'text.secondary'}}>
                                                 /
-                                                <Link href="tel://+233 30 2738 473" underline="none">
-                                                    +233 30 2738 473
-                                                </Link>
                                             </Typography>
+                                            <Link href="tel://+233 30 2738 473" underline="none">
+                                                <Typography
+                                                    gutterBottom={true} variant="body2"
+                                                    sx={{color: 'text.secondary'}}>
+                                                    +233 30 2738 473
+                                                </Typography>
+                                            </Link>
+
                                         </Stack>
                                         <Stack direction="row" spacing={2} alignItems="center">
                                             <Web/>
-                                            <Typography gutterBottom={true} variant="body2"
-                                                        sx={{color: 'text.secondary'}}>
-                                                <Link
-                                                    target="_blank"
-                                                    href="https://https://www.mfa.gov.gh"
-                                                    underline="none">
+                                            <Link
+                                                target="_blank"
+                                                href="https://https://www.mfa.gov.gh"
+                                                underline="none">
+                                                <Typography
+                                                    gutterBottom={true}
+                                                    variant="body2"
+                                                    sx={{color: 'text.secondary'}}>
                                                     https://www.mfa.gov.gh
-                                                </Link>
-                                            </Typography>
+                                                </Typography>
+                                            </Link>
                                         </Stack>
                                         <Stack direction="row" spacing={2} alignItems="center">
                                             <Mail/>
-                                            <Typography gutterBottom={true} variant="body2"
-                                                        sx={{color: 'text.secondary'}}>
-                                                <Link href="mailto://info@mfa.gov.gh" underline="none">
+                                            <Link href="mailto://info@mfa.gov.gh" underline="none">
+                                                <Typography
+                                                    gutterBottom={true}
+                                                    variant="body2"
+                                                    sx={{color: 'text.secondary'}}>
                                                     info@mfa.gov.gh
-                                                </Link>
+                                                </Typography>
+                                            </Link>
+                                            <Typography
+                                                gutterBottom={true} variant="body2"
+                                                sx={{color: 'text.secondary'}}>
                                                 /
-                                                <Link href="mailto://ipab@mfa.gov.gh" underline="none">
-                                                    ipab@mfa.gov.gh
-                                                </Link>
                                             </Typography>
+                                            <Link href="mailto://ipab@mfa.gov.gh" underline="none">
+                                                <Typography
+                                                    gutterBottom={true}
+                                                    variant="body2"
+                                                    sx={{color: 'text.secondary'}}>
+                                                    ipab@mfa.gov.gh
+                                                </Typography>
+                                            </Link>
+
                                         </Stack>
                                     </Stack>
                                 </CardContent>
                             </Card>
                         </Grid>
                         <Grid item={true} xs={12} md={4}>
-                            <Card elevation={1} sx={{backgroundColor: 'background.paper', height: '100%'}}>
+                            <Card elevation={0} sx={{backgroundColor: 'background.paper', height: '100%'}}>
                                 <CardContent>
                                     <Stack direction="column" spacing={2}>
                                         <Typography gutterBottom={true} variant="body1"

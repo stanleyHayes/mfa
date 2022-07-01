@@ -12,11 +12,11 @@ const Layout = ({children}) => {
     const dispatch = useDispatch();
 
     return (
-        <Box sx={{minHeight: '100vh', backgroundColor: 'background.default'}}>
+        <Box sx={{minHeight: '100vh', maxWidth: '100vw', backgroundColor: 'background.default'}}>
             <Box sx={{pt: {xs: 13.5, lg: 13.5}}}>
                 <Header/>
             </Box>
-            <Box>
+            <Box sx={{width: '100vw', maxWidth: '100vw'}}>
                 {children}
             </Box>
             <Box>

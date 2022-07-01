@@ -40,6 +40,7 @@ const HomePage = () => {
     const {news, newsLoading, newsError} = useSelector(selectNews);
     const {events, eventsLoading, eventsError} = useSelector(selectEvent);
 
+    console.log(news)
     return (
         <Layout>
             <Box sx={{mt: 1.8}}>
@@ -398,7 +399,7 @@ const HomePage = () => {
                     <Typography
                         variant="h5"
                         sx={{color: 'text.primary', mb: 4, textTransform: 'uppercase', fontWeight: 700}}>
-                        Missions
+                        Our Missions
                     </Typography>
                     <Grid container={true} spacing={2}>
                         {DATA.MISSIONS.map((mission, index) => {
@@ -451,9 +452,9 @@ const HomePage = () => {
 
                     {news && news.length > 0 && (
                         <Grid container={true} spacing={2}>
-                            {news?.slice(6)?.map(newsItem => {
+                            {news && news.slice(0, 6).map(newsItem => {
                                 return (
-                                    <Grid key={newsItem._id} item={true} xs={12} md={4} lg={3}>
+                                    <Grid key={newsItem._id} item={true} xs={12} md={6} lg={4}>
                                         <NewsItem newsItem={newsItem}/>
                                     </Grid>
                                 )

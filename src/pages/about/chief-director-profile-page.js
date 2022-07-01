@@ -1,6 +1,6 @@
 import Layout from "../../components/layout/layout";
 import {Box, Container, Grid, Typography} from "@mui/material";
-import image from "../../assets/images/image-2.jpg";
+import image from "../../assets/images/ramses.png";
 
 const ChiefDirectorProfilePage = () => {
 
@@ -8,17 +8,17 @@ const ChiefDirectorProfilePage = () => {
     return (
         <Layout>
             <Box sx={{
-                backgroundColor: 'background.paper',
+                backgroundColor: 'background.default',
                 display: 'flex',
                 alignItems: 'center',
                 minHeight: '50vh',
-                py: {xs: 8, lg: 4}
+                py: {xs: 8}
             }}>
                 <Container>
                     <Grid container={true} spacing={4}>
                         <Grid item={true} xs={12} md={4}>
                             <img
-                                alt="MFA Building"
+                                alt="AMBASSADOR RAMSES JOSEPH CLELAND"
                                 src={image}
                                 style={{
                                     width: '100%',
@@ -30,16 +30,16 @@ const ChiefDirectorProfilePage = () => {
                                 }}/>
                         </Grid>
                         <Grid item={true} xs={12} md={8}>
-                            <Typography gutterBottom={true} variant="h4" sx={{color: 'text.primary'}}>
+                            <Typography gutterBottom={true} variant="h5" sx={{color: 'text.primary'}}>
                                 AMBASSADOR RAMSES JOSEPH CLELAND (AG. CHIEF DIRECTOR)
                             </Typography>
-                            <Typography gutterBottom={true} variant="body2" sx={{color: 'text.secondary'}}>
+                            <Typography gutterBottom={true} variant="body1" sx={{color: 'text.secondary'}}>
                                 Ambassador Ramses Joseph Cleland is currently the Acting Chief Director of the Ministry
                                 of Foreign Affairs and Regional Integration of the Republic of Ghana. He was appointed
                                 in December 2021.
                             </Typography>
 
-                            <Typography gutterBottom={true} variant="body2" sx={{color: 'text.secondary'}}>
+                            <Typography gutterBottom={true} variant="body1" sx={{color: 'text.secondary'}}>
                                 Before his appointment Ambassador Cleland served as the Ambassador of Ghana to
                                 Switzerland and Permanent Representative to the United Nations in Geneva from 2017 to
                                 2021, he was also Ghana’s Ambassador to Austria and Permanent Representative to the UN
@@ -48,7 +48,7 @@ const ChiefDirectorProfilePage = () => {
                                 Ghana Missions in France, Brazil, Cote D’Ivoire, Ireland, United Kingdom and Togo.
                             </Typography>
 
-                            <Typography gutterBottom={true} variant="body2" sx={{color: 'text.secondary'}}>
+                            <Typography gutterBottom={true} variant="body1" sx={{color: 'text.secondary'}}>
                                 Ambassador Cleland received a Law Degree (LLB) from the University of London, UK and
                                 continued his law studies at BPP School of Law in London, 2011. He was called to the
                                 Ghana Bar as a Barrister and Solicitor of the Supreme Court of Ghana in 2017. He holds a
@@ -59,7 +59,7 @@ const ChiefDirectorProfilePage = () => {
                                 Human Rights and Humanitarian Law from the Graduate Institute of Geneva.
                             </Typography>
 
-                            <Typography gutterBottom={true} variant="body2" sx={{color: 'text.secondary'}}>
+                            <Typography gutterBottom={true} variant="body1" sx={{color: 'text.secondary'}}>
                                 Mr. Ramses J. Cleland was born on 25th August, 1963 in Cairo, Egypt. He is Married with
                                 four adult children. He loves reading, tennis, music (Piano, Guitar), and mountain
                                 climbing.

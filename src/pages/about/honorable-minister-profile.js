@@ -1,12 +1,13 @@
 import Layout from "../../components/layout/layout";
-import {Box, Container, Typography} from "@mui/material";
+import {Box, Container, Grid, Stack, Typography} from "@mui/material";
 import aicc from "../../assets/images/aicc.jpg";
+import minster from "../../assets/images/image-2.jpg";
 
 const HonorableMinisterProfile = () => {
 
     return (
         <Layout>
-            <Box sx={{mt: 2, position: 'relative', height: '50vh'}}>
+            <Box sx={{mt: 1.7, position: 'relative', height: '50vh'}}>
                 <Box
                     sx={{
                         position: 'absolute',
@@ -43,121 +44,152 @@ const HonorableMinisterProfile = () => {
                             mb={2}
                             sx={{color: 'white'}}
                             variant="h3">
-                            Who we are
+                            THE MINISTER
                         </Typography>
                     </Box>
                 </Box>
             </Box>
 
             <Box sx={{
-                backgroundColor: 'background.paper',
+                backgroundColor: 'background.default',
                 display: 'flex',
                 alignItems: 'center',
                 minHeight: '50vh',
-                py: {xs: 8, lg: 4}
+                py: {xs: 8}
             }}>
                 <Container>
-                    <Typography gutterBottom={true} variant="h4" sx={{color: 'text.primary'}}>
-                        GHANA'S FOREIGN POLICY GUIDELINE
-                    </Typography>
-                    <Typography gutterBottom={true} variant="body2" sx={{color: 'text.secondary'}}>
-                        The Ministry of Foreign Affairs in concert with its Diplomatic Missions abroad, has the
-                        responsibility for the conduct of Ghana’s foreign policy. To that end, the Ministry is the chief
-                        advisor to the Government in the formulation of Ghana’s foreign policy. In order to carry out
-                        its Mission, the Ministry makes recommendations to the Government on appropriate initiatives,
-                        options and responses in the light of unfolding domestic and international events and
-                        situations.
-                    </Typography>
+                    <Stack direction="column" spacing={2}>
+                        <Typography variant="h5" sx={{color: 'text.primary'}}>
+                            PROFILE OF THE HONOURABLE MINISTER
+                        </Typography>
 
-                    <Typography gutterBottom={true} variant="body2" sx={{color: 'text.secondary'}}>
-                        The fundamental principles that guide Ghana’s foreign policy are contained in Ghana’s 1992
-                        Constitution. Article 40 of the Constitution provides the broad principles underpinning her
-                        foreign policy as follows:
-                    </Typography>
+                        <Grid container={true} spacing={2}>
+                            <Grid item={true} xs={12} md={4}>
+                                <img
+                                    alt="Minister of foreign affairs"
+                                    src={minster}
+                                    style={{
+                                        width: '100%',
+                                        height: '100%',
+                                        borderRadius: 32,
+                                        objectFit: 'cover',
+                                    }}/>
+                            </Grid>
+                            <Grid item={true} xs={12} md={8}>
+                                <Stack direction="column" spacing={2}>
+                                    <Typography variant="body1" sx={{color: 'text.secondary'}}>
+                                        Hon. Shirley Ayorkor Botchwey has served as Minister for Foreign Affairs and
+                                        Regional
+                                        Integration of Ghana since 10th January 2017. As Foreign Minister, she has led
+                                        the Council
+                                        of Ministers of the 15-member Economic Community of West African States (ECOWAS)
+                                        for two
+                                        successive terms since July 2020 to the present. Under her leadership, the
+                                        Council has
+                                        advised the Authority of Heads of State and Government of ECOWAS on the response
+                                        to the
+                                        security situation in the Sahel, including four military takeovers, one
+                                        attempted coup and a
+                                        failed coup; the review of the Supplementary Protocol on Democracy and
+                                        Governance; the
+                                        reform of the ECOWAS Commission; and ECOWAS budget reforms to ensure efficiency
+                                        and more
+                                        funding for Community Programmes. In that role, she has led the process of
+                                        negotiations
+                                        towards transitions to democracy with the military regimes that have seized
+                                        power in the
+                                        ECOWAS region since 2020, including as leader of the ECOWAS delegations to
+                                        Guinea and
+                                        Burkina Faso and as a member of the ECOWAS Mediation Mission to Mali.
+                                    </Typography>
+                                    <Typography variant="body1" sx={{color: 'text.secondary'}}>
+                                        Hon. Botchwey has extensive experience in diplomacy having served as a Deputy
+                                        Minister for
+                                        Foreign Affairs in the last term of President John Agyekum Kufuor, from
+                                        2006-2007 and
+                                        2008-2009. She oversaw an extensive transformation in both human resource
+                                        development and
+                                        conditions of service for Foreign Service Officers while streamlining and
+                                        improving consular
+                                        and passport services both at home and at Ghana’s missions abroad, introducing
+                                        digitization
+                                        and enhanced online services. Ghana’s foreign policy successes under her
+                                        leadership include
+                                        the high visibility and positive image Ghana enjoys under the Presidency of
+                                        President Nana
+                                        Addo Dankwa Akufo-Addo. She led Ghana’s successful campaign for membership of
+                                        the United
+                                        Nations Security Council for the term 2022-2023. Foreign Minister Botchwey is a
+                                        member of
+                                        Ghana’s National Security Council.
+                                    </Typography>
+                                </Stack>
+                            </Grid>
+                        </Grid>
+
+                        <Typography variant="body1" sx={{color: 'text.secondary'}}>
+                            Hon. Botchwey previously served as Deputy Minister for Information (2005-2006), and
+                            subsequently as the Deputy Minister for Trade and Industry (2007-2008) in the first term of
+                            President Kufuor from 2000-2004. Hon. Botchwey was her party’s spokesperson on Foreign
+                            Affairs between the year 2009 and 2013, while in opposition. During the same period, she was
+                            Ranking Member for the Parliamentary Select Committee on Foreign Affairs and subsequently,
+                            the Appointments, Defence and Interior Committees of Parliament.
+                        </Typography>
 
 
-                    <Box>
-                        <ol>
-                            <li>Promotion and protection of the interest of Ghana;</li>
-                            <li> Establishment of a just and equitable international, economic, political and social
-                                order;
-                            </li>
-                            <li>Promotion of respect for international law and treaty obligations;</li>
-                            <li> Promotion of the settlement of international disputes through peaceful means;</li>
-                            <li> Adherence to the principles enshrined in the Charter and aims or ideals of the United
-                                Nations, the African Union, the ECOWAS, the Commonwealth and the Non-Aligned Movement.
-                            </li>
-                        </ol>
-                    </Box>
-                    <Typography gutterBottom={true} variant="body2" sx={{color: 'text.secondary'}}>
-                        In fashioning Ghana’s foreign policy, the Ministry takes into account all the factors that
-                        impinge directly or indirectly on the national interest. This involves the protection and
-                        defence of the territorial integrity of Ghana, ensuring peace and stability for Ghana and the
-                        sub-region, contributing to wider international peace and security, cultivating a favourable
-                        image of Ghana abroad and defending that image.
-                    </Typography>
-                    <Typography gutterBottom={true} variant="body2" sx={{color: 'text.secondary'}}>
-                        A nation’s foreign policy has been variously defined in terms of a sovereign state’s interaction
-                        with other states. While some analysts prefer, perhaps, a rather simplistic interpretation of
-                        foreign policy as the external manifestation of the domestic factors and objectives of the
-                        nation, others see foreign policy, indeed, as an extension of domestic policy. Irrespective of
-                        one’s perception of foreign policy, the common denominator is, the evolution of a set of
-                        objectives employed by a nation in advancing its own interest including its survival and
-                        prosperity within a common global security system and development. National interests inevitably
-                        provide that bedrock of the foreign policy of any given state.
-                    </Typography>
-                    <Typography gutterBottom={true} variant="body2" sx={{color: 'text.secondary'}}>
-                        Perhaps to better appreciate Ghana’s foreign policy as it pertains today, it will be appropriate
-                        to give a brief historical appraisal of the nation’s foreign policy objectives since
-                        independence.
-                    </Typography>
-                    <Typography gutterBottom={true} variant="body2" sx={{color: 'text.secondary'}}>
-                        Ghana’s foreign policy from independence in 1957 to the present, and spanning ten different
-                        administrations, has remained largely unchanged in its basic tenets. The foundation of this
-                        policy, which derived from the nation’s historical, geographical and economic perspective, was
-                        laid during the First Republic.
-                    </Typography>
-                    <Typography gutterBottom={true} variant="body2" sx={{color: 'text.secondary'}}>
-                        Over the years, there have been critical reappraisals of foreign policy, particularly in 1982
-                        and in 2001 with a view to making Ghana’s foreign policy more positive, more relevant to changes
-                        on the international climate and more proactive.
-                    </Typography>
-                    <Typography gutterBottom={true} variant="body2" sx={{color: 'text.secondary'}}>
-                        Ghana’s foreign policy involved the call for a United Africa which would culminate in political,
-                        social and economic integration of African countries. It can be said with pride that the
-                        launching of the African Union in 2001 only marked a return to the Pan-Africanist project of
-                        Ghana’s visionary leader and first President, Dr. Kwame Nkrumah. To demonstrate her support for
-                        these ideals of unity, Ghana’s Republican Constitution was amended under President Nkrumah, to
-                        prepare the grounds for surrendering part of the country’s sovereignty, for a union between
-                        Ghana, Guinea and Mali. The Government’s objective was based on the recognition that Africa,
-                        divided into a collection of small states, would not have the economies of scale required for
-                        the advancement of its peoples.
-                    </Typography>
-                    <Typography gutterBottom={true} variant="body2" sx={{color: 'text.secondary'}}>
-                        However, a number of African countries then did not share Ghana’s fervour for a united Africa
-                        and as such the Organisation of African Unity as it came to be constituted, fell short of what
-                        was perceived by the late President.
-                    </Typography>
-                    <Typography gutterBottom={true} variant="body2" sx={{color: 'text.secondary'}}>
-                        Irrespective of her strong stand against the colonial powers, Ghana adopted a pragmatic outlook
-                        in seeking economic cooperation with a number of countries, both in the East and West. Fruitful
-                        and mutually beneficial cooperation with the industrialised countries was pursued to procure the
-                        much needed financial and technical assistance for the young nation’s economic programmes. In
-                        this regard, the policy of Non-Alignment to which Ghana adhered served a useful purpose. This
-                        policy meant the Ghana was neither affiliated to the East or West, the two major world blocs and
-                        could, though sometimes with difficulty, solicit support from either bloc. Nkrumah was, however,
-                        quick to distinguish between neutrality and what he perceived as negative neutrality. Positive
-                        neutrality unlike the other did not imply an apathetic attitude but a necessity to formulate
-                        opinions on issues of global concern on their own merit.
-                    </Typography>
-                    <Typography gutterBottom={true} variant="body2" sx={{color: 'text.secondary'}}>
-                        The foundation laid for the nation’s foreign policy during the First Republic helps to outline
-                        and make better understanding of Ghana’s foreign policy direction as it exists today. Today,
-                        Ghana’s foreign policy constitutes of a mixed bag of progressive views on topical events,
-                        pragmatic management and pursuit of economic programmes, and vigorous yet objective dedication
-                        to West African and African causes and those of developing countries. Traditional political and
-                        topical issues of concern are also considered on their own merit.
-                    </Typography>
+                        <Typography variant="body1" sx={{color: 'text.secondary'}}>
+                            A member of the ECOWAS Parliament from 2013 – 2017, Hon. Shirley Ayorkor Botchwey worked
+                            with her colleagues to assist the Community Parliament in its advisory role in considering
+                            matters concerning the region, particularly on issues relating to fundamental human rights
+                            and freedom, while making recommendations to institutions and organs of ECOWAS. The Hon
+                            Minister also served as Vice-Chair on the NEPAD & APRM Committees.
+                        </Typography>
+
+
+                        <Typography variant="body1" sx={{color: 'text.secondary'}}>
+                            In the immediate past Parliament (2017 – 2021), she sat on the Communication as well as the
+                            Gender and Children Committees of Parliament, where she worked with colleague members on
+                            matters relating to communications generally as well as examining all issues related to
+                            gender and children to ensure their inclusion in all appropriate legislation.
+                        </Typography>
+
+
+                        <Typography variant="body1" sx={{color: 'text.secondary'}}>
+                            As a four-term legislator, Hon. Botchwey represented the most populous constituency in the
+                            country, Weija, in the Greater Accra Region for two terms until it was redemarcated. She
+                            subsequently represented the Anyaa/Sowutuom constituency for two terms.
+                        </Typography>
+
+
+                        <Typography variant="body1" sx={{color: 'text.secondary'}}>
+                            Before entering frontline politics, Hon. Shirley Ayorkor Botchwey ran a successful Marketing
+                            and Communications Company and served as a consultant for the Ministry of Tourism. She
+                            worked in various capacities with organizations such as Worldspace Ghana, the Divestiture
+                            Implementation Committee, Glaxo Group Research and Hodge Recruitment.
+                        </Typography>
+
+                        <Typography variant="body1" sx={{color: 'text.secondary'}}>
+                            Hon. Minister Botchwey holds an Executive MBA, (Project Management option), MA in Public
+                            Communication, Bachelor of Laws Degree (LLB), a Diploma in Public Relations and Advertising
+                            as well as a certificate in Marketing Management from the following institutions
+                            respectively: the University of Ghana Business School (UGBS), the Ghana Institute of
+                            Journalism (GIJ), Ghana Institute of Management and Public Administration (GIMPA) as well as
+                            the Pitman’s Central College and the Universities of London and Westminster in the United
+                            Kingdom (UK).
+                        </Typography>
+
+                        <Typography variant="body1" sx={{color: 'text.secondary'}}>
+                            Hon. Botchwey is a member of the Ghana National Association of Alternative Dispute (ADR)
+                            Practitioners. She has participated in numerous capacity-building programmes on leadership,
+                            marketing, driving government performance and parliament and the rule of law, including at
+                            the Institute of Paralegal Training and Leadership Studies, Harvard Kennedy School, Casa
+                            Africa, Parliament of Spain, The African Leadership Initiative/The Aspen Institute, and the
+                            Ghana Institute of Management and Public Administration.
+                        </Typography>
+                        <Typography variant="body1" sx={{color: 'text.secondary'}}>
+                            Hon. Shirley Ayorkor Botchwey is a mother of two.
+                        </Typography>
+                    </Stack>
                 </Container>
             </Box>
         </Layout>

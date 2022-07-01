@@ -1,5 +1,5 @@
 import Layout from "../../components/layout/layout";
-import {Box, Button, Container, Grid, Typography} from "@mui/material";
+import {Box, Button, Container, Grid, Stack, Typography} from "@mui/material";
 import foreignPolicy from "../../assets/images/foreign-policy.jpg";
 import aicc from "../../assets/images/aicc.jpg";
 import policyObjective from "../../assets/images/policy-objective.jpg";
@@ -11,7 +11,7 @@ const ForeignPoliciesPage = () => {
 
     return (
         <Layout>
-            <Box sx={{mt: 2, position: 'relative', height: '50vh'}}>
+            <Box sx={{mt: 1.8, position: 'relative', height: '50vh'}}>
                 <Box
                     sx={{
                         position: 'absolute',
@@ -55,7 +55,7 @@ const ForeignPoliciesPage = () => {
             </Box>
 
             <Box sx={{
-                backgroundColor: 'background.paper',
+                backgroundColor: 'background.default',
                 display: 'flex',
                 alignItems: 'center',
                 minHeight: '50vh',
@@ -77,26 +77,32 @@ const ForeignPoliciesPage = () => {
                                 }}/>
                         </Grid>
                         <Grid item={true} xs={12} md={6}>
-                            <Typography gutterBottom={true} variant="h4" sx={{color: 'text.primary'}}>
-                                GHANA’S FOREIGN POLICY GUIDELINE
-                            </Typography>
-                            <Typography gutterBottom={true} variant="body2" sx={{color: 'text.secondary'}}>
-                                The Ministry of Foreign Affairs in concert with its Diplomatic Missions abroad, has the
-                                responsibility for the conduct of Ghana’s foreign policy. To that end, the Ministry is
-                                the chief advisor to the Government in the formulation of Ghana’s foreign policy. In
-                                order to carry out its Mission, the Ministry makes recommendations to the Government on
-                                appropriate initiatives, options and responses in the light of unfolding domestic and
-                                international events and situations.
-                            </Typography>
-                            <Link to="/" style={{textDecoration: 'none'}}>
-                                <Button
-                                    size="large"
-                                    sx={{textTransform: 'capitalize'}}
-                                    variant="text"
-                                    endIcon={<ChevronRight/>}>
-                                    Read More
-                                </Button>
-                            </Link>
+                            <Stack direction="column" spacing={2}>
+                                <Typography variant="h5" sx={{color: 'text.primary'}}>
+                                    GHANA’S FOREIGN POLICY GUIDELINE
+                                </Typography>
+                                <Typography variant="body1" sx={{color: 'text.secondary'}}>
+                                    The Ministry of Foreign Affairs in concert with its Diplomatic Missions abroad, has
+                                    the
+                                    responsibility for the conduct of Ghana’s foreign policy. To that end, the Ministry
+                                    is
+                                    the chief advisor to the Government in the formulation of Ghana’s foreign policy. In
+                                    order to carry out its Mission, the Ministry makes recommendations to the Government
+                                    on
+                                    appropriate initiatives, options and responses in the light of unfolding domestic
+                                    and
+                                    international events and situations.
+                                </Typography>
+                                <Link to="/" style={{textDecoration: 'none'}}>
+                                    <Button
+                                        size="large"
+                                        sx={{textTransform: 'capitalize'}}
+                                        variant="outlined"
+                                        endIcon={<ChevronRight/>}>
+                                        Read More
+                                    </Button>
+                                </Link>
+                            </Stack>
                         </Grid>
                     </Grid>
                 </Container>
@@ -105,33 +111,38 @@ const ForeignPoliciesPage = () => {
             <Box sx={{
                 display: 'flex',
                 alignItems: 'center',
-                backgroundColor: 'background.default',
+                backgroundColor: 'background.paper',
                 minHeight: '50vh', py: {xs: 8, lg: 4}
             }}>
                 <Container>
                     <Grid container={true} spacing={4}>
                         <Grid item={true} xs={12} md={6}>
-                            <Typography gutterBottom={true} variant="h4" sx={{color: 'text.primary'}}>
-                                POLICY OBJECTIVE
-                            </Typography>
-                            <Typography variant="body2" sx={{color: 'text.secondary'}}>
-                                Ghana's foreign policy objectives continue to be directed towards the promotion and
-                                protection of the interests of Ghana, establishment of a just and equitable
-                                international economic policy and social order. The rest are the promotion of respect
-                                for international law and treaty obligations and settlement of international disputes by
-                                peaceful means as well as adherence to the principles enshrined in the Charter of the
-                                United Nations, the African Union, the Commonwealth, the ECOWAS Treaty and other
-                                organisations of which Ghana is a member.
-                            </Typography>
-                            <Link to="/" style={{textDecoration: 'none'}}>
-                                <Button
-                                    size="large"
-                                    sx={{textTransform: 'capitalize'}}
-                                    variant="text"
-                                    endIcon={<ChevronRight/>}>
-                                    Read More
-                                </Button>
-                            </Link>
+                            <Stack direction="column" spacing={2}>
+                                <Typography variant="h5" sx={{color: 'text.primary'}}>
+                                    POLICY OBJECTIVE
+                                </Typography>
+                                <Typography variant="body1" sx={{color: 'text.secondary'}}>
+                                    Ghana's foreign policy objectives continue to be directed towards the promotion and
+                                    protection of the interests of Ghana, establishment of a just and equitable
+                                    international economic policy and social order. The rest are the promotion of
+                                    respect
+                                    for international law and treaty obligations and settlement of international
+                                    disputes by
+                                    peaceful means as well as adherence to the principles enshrined in the Charter of
+                                    the
+                                    United Nations, the African Union, the Commonwealth, the ECOWAS Treaty and other
+                                    organisations of which Ghana is a member.
+                                </Typography>
+                                <Link to="/" style={{textDecoration: 'none'}}>
+                                    <Button
+                                        size="large"
+                                        sx={{textTransform: 'capitalize'}}
+                                        variant="outlined"
+                                        endIcon={<ChevronRight/>}>
+                                        Read More
+                                    </Button>
+                                </Link>
+                            </Stack>
                         </Grid>
                         <Grid item={true} xs={12} md={6}>
                             <img
@@ -153,7 +164,7 @@ const ForeignPoliciesPage = () => {
             <Box sx={{
                 display: 'flex',
                 alignItems: 'center',
-                backgroundColor: 'background.paper',
+                backgroundColor: 'background.default',
                 minHeight: '50vh',
                 py: {xs: 8, lg: 4}
             }}>
@@ -173,26 +184,29 @@ const ForeignPoliciesPage = () => {
                                 }}/>
                         </Grid>
                         <Grid item={true} xs={12} md={6}>
-                            <Typography gutterBottom={true} variant="h4" sx={{color: 'text.primary'}}>
-                                GROWTH AND DEVELOPMENT AGENDA
-                            </Typography>
-                            <Typography variant="body2" sx={{color: 'text.secondary'}}>
-                                The current foreign policy goal of Government is to achieve good neighbourliness and
-                                pursue economic diplomacy. To this end the policy interventions to be implemented over
-                                the medium- term is aimed at achieving the following broad objectives: accelerate
-                                economic and social integration with regional and sub-regional states; promote
-                                international peace and sustainable development; and leverage the economic and
-                                technological opportunities for sustainable development.
-                            </Typography>
-                            <Link to="/" style={{textDecoration: 'none'}}>
-                                <Button
-                                    size="large"
-                                    sx={{textTransform: 'capitalize'}}
-                                    variant="text"
-                                    endIcon={<ChevronRight/>}>
-                                    Read More
-                                </Button>
-                            </Link>
+                            <Stack direction="column" spacing={2}>
+                                <Typography gutterBottom={true} variant="h5" sx={{color: 'text.primary'}}>
+                                    GROWTH AND DEVELOPMENT AGENDA
+                                </Typography>
+                                <Typography variant="body1" sx={{color: 'text.secondary'}}>
+                                    The current foreign policy goal of Government is to achieve good neighbourliness and
+                                    pursue economic diplomacy. To this end the policy interventions to be implemented
+                                    over
+                                    the medium- term is aimed at achieving the following broad objectives: accelerate
+                                    economic and social integration with regional and sub-regional states; promote
+                                    international peace and sustainable development; and leverage the economic and
+                                    technological opportunities for sustainable development.
+                                </Typography>
+                                <Link to="/" style={{textDecoration: 'none'}}>
+                                    <Button
+                                        size="large"
+                                        sx={{textTransform: 'capitalize'}}
+                                        variant="outlined"
+                                        endIcon={<ChevronRight/>}>
+                                        Read More
+                                    </Button>
+                                </Link>
+                            </Stack>
                         </Grid>
                     </Grid>
                 </Container>

@@ -58,7 +58,7 @@ const GhanaEconomyPage = () => {
                 minHeight: '50vh',
                 py: {xs: 8, lg: 4}
             }}>
-                <Container>
+                <Container maxWidth="md">
                     <Stack spacing={4} direction="column">
                         <img
                             alt="Economy of Ghana"

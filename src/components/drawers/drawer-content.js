@@ -39,7 +39,7 @@ const DrawerContent = () => {
 
                     <MobileNavLink
                         active={pathname === '/contact'}
-                        path="/" label="Contact"
+                        path="/contact" label="Contact"
                     />
 
                     <Accordion variant="elevation" elevation={0}>

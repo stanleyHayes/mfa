@@ -6,7 +6,7 @@ const ForeignPoliciesObjectivesPage = () => {
 
     return (
         <Layout>
-            <Box sx={{mt: 2, position: 'relative', height: '50vh'}}>
+            <Box sx={{mt: 1.7, position: 'relative', height: '50vh'}}>
                 <Box
                     sx={{
                         position: 'absolute',
@@ -50,17 +50,19 @@ const ForeignPoliciesObjectivesPage = () => {
             </Box>
 
             <Box sx={{
-                backgroundColor: 'background.paper',
+                backgroundColor: 'background.default',
                 display: 'flex',
                 alignItems: 'center',
                 minHeight: '50vh',
                 py: {xs: 8, lg: 4}
             }}>
-                <Container>
-                    <Typography gutterBottom={true} variant="h4" sx={{color: 'text.primary', fontWeight: 'bold'}}>
-                        FOREIGN POLICY OBJECTIVES
-                    </Typography>
+                <Container maxWidth="md">
                     <Stack direction="column" spacing={2}>
+                        <Typography
+                            gutterBottom={true}
+                            variant="h5" sx={{color: 'text.primary'}}>
+                            FOREIGN POLICY OBJECTIVES
+                        </Typography>
                         <Box>
                             <Typography
                                 gutterBottom={true}
