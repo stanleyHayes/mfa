@@ -8,7 +8,7 @@ import Country from "../../components/shared/country";
 const MissionsPage = () => {
     const {continent} = useParams();
     const [selectedContinent] = useState(() => {
-        return DATA.MISSIONS.find(mission => mission.area.toLowerCase() === continent);
+        return DATA.MISSIONS.find(mission => mission.area.toLowerCase().includes(continent.split('-')[0]));
     });
 
     return (
