@@ -252,19 +252,23 @@ const HomePage = () => {
                     <Grid container={true} spacing={2}>
                         <Grid item={true} xs={12} md={6} lg={3}>
                             <Card elevation={0} sx={{height: '100%'}}>
-                                <CardContent>
-                                    <CardMedia component="img" src={minister}
-                                               sx={{height: 200, borderRadius: 1, mb: 2}}/>
-                                    <Stack direction="column" spacing={2}>
-                                        <Typography align="center" gutterBottom={true} variant="body1"
-                                                    sx={{color: 'text.primary'}}>
-                                            Hon. Shirley Ayorkor Botchwey
-                                        </Typography>
-                                        <Typography align="center" variant="body2" sx={{color: 'text.secondary'}}>
-                                            Minister For Foreign Affairs And Regional Integration
-                                        </Typography>
+                                <Box sx={{display: 'flex', flexDirection: 'column', height: '100%'}}>
+                                    <CardContent sx={{flex: 1}}>
+                                        <CardMedia component="img" src={minister}
+                                                   sx={{height: 200, borderRadius: 1, mb: 2}}/>
+                                        <Stack direction="column" spacing={2}>
+                                            <Typography align="center" gutterBottom={true} variant="body1"
+                                                        sx={{color: 'text.primary'}}>
+                                                Hon. Shirley Ayorkor Botchwey
+                                            </Typography>
+                                            <Typography align="center" variant="body2" sx={{color: 'text.secondary'}}>
+                                                Minister For Foreign Affairs And Regional Integration
+                                            </Typography>
+                                        </Stack>
+                                    </CardContent>
+                                    <CardContent>
                                         <Stack direction="row" justifyContent="flex-end">
-                                            <Link to="/" style={{textDecoration: 'none'}}>
+                                            <Link to="/about/honorable-ministers-profile" style={{textDecoration: 'none'}}>
                                                 <Button
                                                     size="small"
                                                     sx={{textTransform: 'capitalize'}}
@@ -276,34 +280,39 @@ const HomePage = () => {
                                                 </Button>
                                             </Link>
                                         </Stack>
-                                    </Stack>
-                                </CardContent>
+                                    </CardContent>
+                                </Box>
                             </Card>
                         </Grid>
                         <Grid item={true} xs={12} md={6} lg={3}>
                             <Card elevation={0} sx={{height: '100%'}}>
-                                <CardContent>
-                                    <CardMedia
-                                        component="img"
-                                        src={kwaku}
-                                        sx={{
-                                            height: 200,
-                                            borderRadius: 1,
-                                            mb: 2,
-                                            objectPosition: 'top',
-                                            objectFit: 'cover'
-                                        }}/>
-                                    <Stack direction="column" spacing={2}>
-                                        <Typography align="center" gutterBottom={true} variant="body1"
-                                                    sx={{color: 'text.primary'}}>
-                                            Hon. Kwaku Ampratwum-Sarpong, MP
-                                        </Typography>
-                                        <Typography align="center" variant="body2" sx={{color: 'text.secondary'}}>
-                                            Deputy Minister Political And Economic Of The Ministry Of Foreign Affairs
-                                            And Regional Integration
-                                        </Typography>
+                                <Box sx={{display: 'flex', flexDirection: 'column', height: '100%'}}>
+                                    <CardContent sx={{flex: 1}}>
+                                        <CardMedia
+                                            component="img"
+                                            src={kwaku}
+                                            sx={{
+                                                height: 200,
+                                                borderRadius: 1,
+                                                mb: 2,
+                                                objectPosition: 'top',
+                                                objectFit: 'cover'
+                                            }}/>
+                                        <Stack direction="column" spacing={2}>
+                                            <Typography align="center" gutterBottom={true} variant="body1"
+                                                        sx={{color: 'text.primary'}}>
+                                                Hon. Kwaku Ampratwum-Sarpong, MP
+                                            </Typography>
+                                            <Typography align="center" variant="body2" sx={{color: 'text.secondary'}}>
+                                                Deputy Minister Political And Economic Of The Ministry Of Foreign
+                                                Affairs
+                                                And Regional Integration
+                                            </Typography>
+                                        </Stack>
+                                    </CardContent>
+                                    <CardContent>
                                         <Stack direction="row" justifyContent="flex-end">
-                                            <Link to="/" style={{textDecoration: 'none'}}>
+                                            <Link to="/about/kwaku-ampratwum-sarpong-profile" style={{textDecoration: 'none'}}>
                                                 <Button
                                                     size="small"
                                                     sx={{textTransform: 'capitalize'}}
@@ -315,36 +324,41 @@ const HomePage = () => {
                                                 </Button>
                                             </Link>
                                         </Stack>
-                                    </Stack>
-                                </CardContent>
+                                    </CardContent>
+                                </Box>
                             </Card>
                         </Grid>
                         <Grid item={true} xs={12} md={6} lg={3}>
                             <Card elevation={0} sx={{height: '100%'}}>
-                                <CardContent>
-                                    <CardMedia
-                                        component="img" src={thomasMboba}
-                                        sx={{
-                                            height: 200,
-                                            borderRadius: 1,
-                                            mb: 2,
-                                            objectPosition: 'top',
-                                            objectFit: 'cover'
-                                        }}/>
-                                    <Stack direction="column" spacing={2}>
-                                        <Typography
-                                            align="center"
-                                            gutterBottom={true}
-                                            variant="body1"
-                                            sx={{color: 'text.primary'}}>
-                                            Hon. Thomas Mbomba ,MP
-                                        </Typography>
-                                        <Typography align="center" variant="body2" sx={{color: 'text.secondary'}}>
-                                            Deputy Minister Administration And Finance Of The Ministry Of Foreign
-                                            Affairs And Regional Integration
-                                        </Typography>
+                                <Box sx={{display: 'flex', flexDirection: 'column', height: '100%'}}>
+                                    <CardContent sx={{flex: 1}}>
+                                        <CardMedia
+                                            component="img" src={thomasMboba}
+                                            sx={{
+                                                height: 200,
+                                                borderRadius: 1,
+                                                mb: 2,
+                                                objectPosition: 'top',
+                                                objectFit: 'cover'
+                                            }}/>
+                                        <Stack direction="column" spacing={2}>
+                                            <Typography
+                                                align="center"
+                                                gutterBottom={true}
+                                                variant="body1"
+                                                sx={{color: 'text.primary'}}>
+                                                Hon. Thomas Mbomba ,MP
+                                            </Typography>
+                                            <Typography align="center" variant="body2" sx={{color: 'text.secondary'}}>
+                                                Deputy Minister Administration And Finance Of The Ministry Of Foreign
+                                                Affairs And Regional Integration
+                                            </Typography>
+
+                                        </Stack>
+                                    </CardContent>
+                                    <CardContent>
                                         <Stack direction="row" justifyContent="flex-end">
-                                            <Link to="/" style={{textDecoration: 'none'}}>
+                                            <Link to="/about/thomas-mbomba-profile" style={{textDecoration: 'none'}}>
                                                 <Button
                                                     disableElevation={true}
                                                     color="primary"
@@ -356,34 +370,38 @@ const HomePage = () => {
                                                 </Button>
                                             </Link>
                                         </Stack>
-                                    </Stack>
-                                </CardContent>
+                                    </CardContent>
+                                </Box>
                             </Card>
                         </Grid>
                         <Grid item={true} xs={12} md={6} lg={3}>
                             <Card elevation={0} sx={{height: '100%'}}>
-                                <CardContent>
-                                    <CardMedia
-                                        component="img"
-                                        src={ramses}
-                                        sx={{
-                                            height: 200,
-                                            borderRadius: 1,
-                                            mb: 2,
-                                            objectPosition: 'top',
-                                            objectFit: 'cover'
-                                        }}/>
-                                    <Stack direction="column" spacing={2}>
-                                        <Typography align="center" gutterBottom={true} variant="body1"
-                                                    sx={{color: 'text.primary'}}>
-                                            Ambassador Ramses Joseph Cleland
-                                        </Typography>
-                                        <Typography align="center" variant="body2" sx={{color: 'text.secondary'}}>
-                                            Ag. Chief Director Of The Ministry Of Foreign Affairs And Regional
-                                            Integration
-                                        </Typography>
+                                <Box sx={{display: 'flex', flexDirection: 'column', height: '100%'}}>
+                                    <CardContent sx={{flex: 1}}>
+                                        <CardMedia
+                                            component="img"
+                                            src={ramses}
+                                            sx={{
+                                                height: 200,
+                                                borderRadius: 1,
+                                                mb: 2,
+                                                objectPosition: 'top',
+                                                objectFit: 'cover'
+                                            }}/>
+                                        <Stack direction="column" spacing={2}>
+                                            <Typography align="center" gutterBottom={true} variant="body1"
+                                                        sx={{color: 'text.primary'}}>
+                                                Ambassador Ramses Joseph Cleland
+                                            </Typography>
+                                            <Typography align="center" variant="body2" sx={{color: 'text.secondary'}}>
+                                                Ag. Chief Director Of The Ministry Of Foreign Affairs And Regional
+                                                Integration
+                                            </Typography>
+                                        </Stack>
+                                    </CardContent>
+                                    <CardContent>
                                         <Stack direction="row" justifyContent="flex-end">
-                                            <Link to="/" style={{textDecoration: 'none'}}>
+                                            <Link to="/about/the-chief-directors-profile" style={{textDecoration: 'none'}}>
                                                 <Button
                                                     size="small"
                                                     sx={{textTransform: 'capitalize'}}
@@ -395,8 +413,8 @@ const HomePage = () => {
                                                 </Button>
                                             </Link>
                                         </Stack>
-                                    </Stack>
-                                </CardContent>
+                                    </CardContent>
+                                </Box>
                             </Card>
                         </Grid>
                     </Grid>
