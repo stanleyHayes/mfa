@@ -23,7 +23,7 @@ const NavLink = ({path, label, active}) => {
                     borderBottomLeftRadius: 0,
                     borderTopLeftRadius: 32,
                     backgroundColor: active ? 'light.secondary' : false,
-                    textTransform: 'uppercase',
+                    textTransform: 'capitalize',
                     color: active ? 'text.primary' : 'text.secondary',
                     justifyContent: 'flex-start'
                 }}
