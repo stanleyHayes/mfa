@@ -65,13 +65,13 @@ const AboutPage = () => {
                         <Typography gutterBottom={true} variant="h5" sx={{color: 'text.primary'}}>
                             BRIEF HISTORY OF THE MINISTRY
                         </Typography>
-                        <Typography gutterBottom={true} variant="body1" sx={{color: 'text.secondary'}}>
+                        <Typography gutterBottom={true} variant="body2" sx={{color: 'text.secondary'}}>
                             The Ministry of Foreign Affairs was established in 1957 with Dr. Kwame Nkrumah, then leader
                             of
                             Government Business, as the first Foreign Minister. A Permanent Secretary was the head of
                             administration, aided by Principal Assistant Secretaries who headed the various departments.
                         </Typography>
-                        <Typography gutterBottom={true} variant="body1" sx={{color: 'text.secondary'}}>
+                        <Typography gutterBottom={true} variant="body2" sx={{color: 'text.secondary'}}>
                             On 6th March, 1957, when Ghana became independent, Dr. Kwame Nkrumah made a historic foreign
                             policy pronouncement. The concept of free, proud, confident Africa was to dominate the
                             foreign
@@ -80,7 +80,7 @@ const AboutPage = () => {
                             been selected and trained in 1955 to implement her foreign policy. Three very senior civil
                             servants were also drafted into the Foreign Ministry to occupy higher posts.
                         </Typography>
-                        <Typography gutterBottom={true} variant="body1" sx={{color: 'text.secondary'}}>
+                        <Typography gutterBottom={true} variant="body2" sx={{color: 'text.secondary'}}>
                             Dr. Nkrumah established an autonomous African Affairs Secretariat under his personal
                             direction
                             primarily to promote and effect his vision of African Unity – a foreign policy issue which
@@ -88,7 +88,7 @@ const AboutPage = () => {
                             in
                             February 1966, the Secretariat was incorporated into the Ministry.
                         </Typography>
-                        <Typography gutterBottom={true} variant="body1" sx={{color: 'text.secondary'}}>
+                        <Typography gutterBottom={true} variant="body2" sx={{color: 'text.secondary'}}>
                             The Ministry and its diplomatic missions abroad constitute the Ghana Foreign Service charged
                             with the control, direction and coordination of Ghana’s external relations. In addition to
                             diplomatic missions, honorary consulates are established to complement the work of the
@@ -97,7 +97,7 @@ const AboutPage = () => {
                             functions in
                             areas with significant Ghanaian communities.
                         </Typography>
-                        <Typography variant="body1" sx={{color: 'text.secondary'}}>
+                        <Typography variant="body2" sx={{color: 'text.secondary'}}>
                             The name of the Ministry has undergone various changes in Ghana’s recent history. Its
                             current
                             name, Ministry of Foreign Affairs and Regional Integration, was designated in 2009 to
@@ -120,13 +120,13 @@ const AboutPage = () => {
                         <Typography gutterBottom={true} variant="h5" sx={{color: 'text.primary'}}>
                             INTRODUCTION
                         </Typography>
-                        <Typography gutterBottom={true} variant="body1" sx={{color: 'text.secondary'}}>
+                        <Typography gutterBottom={true} variant="body2" sx={{color: 'text.secondary'}}>
                             The Ministry of Foreign Affairs and Regional Integration is the principal organ of state
                             responsible administratively and executively for the initiation, formulation, co-ordination
                             and
                             management of Ghana’s Foreign Policy.
                         </Typography>
-                        <Typography gutterBottom={true} variant="body1" sx={{color: 'text.secondary'}}>
+                        <Typography gutterBottom={true} variant="body2" sx={{color: 'text.secondary'}}>
                             It comprises the Headquarters, fifty (50) Diplomatic and Five (5) Consulate
                             Generals/Consular
                             Missions as well as three (3) Subvented Organizations, viz, The Legon Centre for
@@ -165,7 +165,7 @@ const AboutPage = () => {
                                 <Typography gutterBottom={true} variant="h5" sx={{color: 'text.primary'}}>
                                     HEADQUARTERS
                                 </Typography>
-                                <Typography gutterBottom={true} variant="body1" sx={{color: 'text.secondary'}}>
+                                <Typography gutterBottom={true} variant="body2" sx={{color: 'text.secondary'}}>
                                     The Ministry operates at the Headquarters through the Offices of the Hon. Minister
                                     and
                                     Hon. Deputy Minister as well as the Directorate and Staff of the various Bureaux. At
@@ -221,7 +221,7 @@ const AboutPage = () => {
                                 <Typography gutterBottom={true} variant="h5" sx={{color: 'text.primary'}}>
                                     GHANA MISSIONS ABROAD AND GEOGRAPHICAL DISTRIBUTION
                                 </Typography>
-                                <Typography gutterBottom={true} variant="body1" sx={{color: 'text.secondary'}}>
+                                <Typography gutterBottom={true} variant="body2" sx={{color: 'text.secondary'}}>
                                     Ghana currently maintains fifty-five (55) Embassies, High Commissions and
                                     Consulates-General (please see Appendix A). To complement the work of the Missions,
                                     fifty-nine (59) Honorary Consulates have also been established. Several of the

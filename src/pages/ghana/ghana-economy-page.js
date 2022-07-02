@@ -73,18 +73,18 @@ const GhanaEconomyPage = () => {
                         <Typography gutterBottom={true} variant="h4" sx={{color: 'text.primary'}}>
                             OVERVIEW
                         </Typography>
-                        <Typography gutterBottom={true} variant="body1" sx={{color: 'text.secondary'}}>
+                        <Typography gutterBottom={true} variant="body2" sx={{color: 'text.secondary'}}>
                             Ghana’s economy has been strengthened by a quarter century of relatively sound management, a
                             competitive business environment, and sustained reductions in poverty levels. Ghana is well
                             endowed with natural resources and agriculture accounts for roughly one-quarter of GDP and
                             employs more than half of the workforce, mainly small landholders. The services sector
                             accounts for 50% of GDP.
                         </Typography>
-                        <Typography gutterBottom={true} variant="body1" sx={{color: 'text.secondary'}}>
+                        <Typography gutterBottom={true} variant="body2" sx={{color: 'text.secondary'}}>
                             According to the 2018 Budget Statement and Economic Policy, the summary of Ghana’s
                             Macroeconomic performance, under the theme “Putting Ghana Back to Work”, is as follows:
                         </Typography>
-                        <Typography gutterBottom={true} variant="body1" sx={{color: 'text.secondary'}}>
+                        <Typography gutterBottom={true} variant="body2" sx={{color: 'text.secondary'}}>
                             Overall real GDP grew at an estimated 7.8 percent in the first half of 2017 (6.6% in quarter
                             one and 9.0% in quarter two) against 2.7 percent in same period in 2016. Overall GDP growth
                             is provisionally estimated at 7.9 percent at the end of 2017, up from the original forecast

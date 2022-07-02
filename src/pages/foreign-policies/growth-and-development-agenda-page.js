@@ -28,12 +28,12 @@ const GrowthAndDevelopmentAgendaPage = () => {
                                 Specific Broad Sector Activities of the Ministry
                             </Typography>
 
-                            <Typography gutterBottom={true} variant="body1"
+                            <Typography gutterBottom={true} variant="body2"
                                         sx={{color: 'text.primary', fontWeight: 500}}>
                                 International Relations for Development (Under Ghana’s Shared Growth and Development
                                 Agenda 2014-2017)
                             </Typography>
-                            <Typography gutterBottom={true} variant="body1" sx={{color: 'text.secondary'}}>
+                            <Typography gutterBottom={true} variant="body2" sx={{color: 'text.secondary'}}>
                                 The current foreign policy goal of Government is to achieve good neighbourliness and
                                 pursue
                                 economic diplomacy. To this end the policy interventions to be implemented over the
@@ -44,11 +44,11 @@ const GrowthAndDevelopmentAgendaPage = () => {
                                 sustainable development; and leverage the economic and technological opportunities for
                                 sustainable development.
                             </Typography>
-                            <Typography gutterBottom={true} variant="body1"
+                            <Typography gutterBottom={true} variant="body2"
                                         sx={{color: 'text.primary', fontWeight: 500}}>
                                 Accelerate economic and social integration with regional and sub-regional states:
                             </Typography>
-                            <Typography gutterBottom={true} variant="body1" sx={{color: 'text.secondary'}}>
+                            <Typography gutterBottom={true} variant="body2" sx={{color: 'text.secondary'}}>
                                 The main issue identified under this policy objective is bottlenecks in the free
                                 movement of
                                 goods and services among ECOWAS member states. To address the issue and accelerate
@@ -58,11 +58,11 @@ const GrowthAndDevelopmentAgendaPage = () => {
                                 accords;
                                 and strengthening links between industrial and trade policies.
                             </Typography>
-                            <Typography gutterBottom={true} variant="body1"
+                            <Typography gutterBottom={true} variant="body2"
                                         sx={{color: 'text.primary', fontWeight: 500}}>
                                 Promote international peace and sustainable development:
                             </Typography>
-                            <Typography gutterBottom={true} variant="body1" sx={{color: 'text.secondary'}}>
+                            <Typography gutterBottom={true} variant="body2" sx={{color: 'text.secondary'}}>
                                 Issues identified under this objective are: threats to international peace and security
                                 as
                                 well
@@ -78,11 +78,11 @@ const GrowthAndDevelopmentAgendaPage = () => {
                                 and
                                 multilateral diplomacy.
                             </Typography>
-                            <Typography gutterBottom={true} variant="body1"
+                            <Typography gutterBottom={true} variant="body2"
                                         sx={{color: 'text.primary', fontWeight: 500}}>
                                 Leverage economic and technological opportunities for sustainable development:
                             </Typography>
-                            <Typography gutterBottom={true} variant="body1" sx={{color: 'text.secondary'}}>
+                            <Typography gutterBottom={true} variant="body2" sx={{color: 'text.secondary'}}>
                                 The low utilisation of opportunities to promote Ghana’s interests abroad has been
                                 identified
                                 as the main issue under the focus area. The strategies to be pursued to address this

@@ -70,7 +70,7 @@ const GhanaRegionsPage = () => {
                         <Typography align="center" variant="h5" sx={{color: 'text.primary'}}>
                             Various Regions in Ghana
                         </Typography>
-                        <Typography align="center" variant="body1" sx={{color: 'text.primary'}}>
+                        <Typography align="center" variant="body2" sx={{color: 'text.primary'}}>
                             Ghana is divided into 10 administrative regions, subdivided into a total of 170 districts.
                             The regions are:
                         </Typography>
