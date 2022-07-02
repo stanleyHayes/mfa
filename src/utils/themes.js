@@ -67,8 +67,9 @@ const darkTheme = createTheme({
             main: '#ffd300'
         },
         light: {
-            secondary: 'rgba(210,70,98,0.15)',
-            primary: '#0000004C'
+            secondary: '#228C224D',
+            primary: '#0000004C',
+            accent: '#FFD3004D'
         },
         action: {
             active: '#b90e0a'

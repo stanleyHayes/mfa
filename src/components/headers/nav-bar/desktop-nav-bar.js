@@ -56,10 +56,10 @@ const DesktopNavBar = () => {
                                 endIcon={foreignPoliciesMenuOpen ? <KeyboardArrowUp/> : <KeyboardArrowDown/>}
                                 onClick={handleForeignPoliciesOpen}
                                 sx={{
-                                    borderTopRightRadius: 32,
-                                    borderBottomRightRadius: 32,
+                                    borderTopRightRadius: 4,
+                                    borderBottomRightRadius: 4,
                                     borderBottomLeftRadius: 0,
-                                    borderTopLeftRadius: 32,
+                                    borderTopLeftRadius: 4,
                                     backgroundColor: pathname.startsWith('/foreign-policies') ? 'light.accent' : false,
                                     textTransform: 'uppercase',
                                     color: pathname.startsWith('/foreign-policies') ? 'text.primary' : 'text.secondary'
@@ -73,10 +73,10 @@ const DesktopNavBar = () => {
                                 endIcon={aboutMenuOpen ? <KeyboardArrowUp/> : <KeyboardArrowDown/>}
                                 onClick={handleAboutOpen}
                                 sx={{
-                                    borderTopRightRadius: 32,
-                                    borderBottomRightRadius: 32,
+                                    borderTopRightRadius: 4,
+                                    borderBottomRightRadius: 4,
                                     borderBottomLeftRadius: 0,
-                                    borderTopLeftRadius: 32,
+                                    borderTopLeftRadius: 4,
                                     backgroundColor: pathname.startsWith('/about') ? 'light.accent' : false,
                                     textTransform: 'uppercase',
                                     color: pathname.startsWith('/about') ? 'text.primary' : 'text.secondary'
@@ -205,10 +205,10 @@ const DesktopNavBar = () => {
                                 <Button
                                     endIcon={<OpenInNew/>}
                                     sx={{
-                                        borderTopRightRadius: 32,
-                                        borderBottomRightRadius: 32,
-                                        borderBottomLeftRadius: 32,
-                                        borderTopLeftRadius: 32,
+                                        borderTopRightRadius: 4,
+                                        borderBottomRightRadius: 4,
+                                        borderBottomLeftRadius: 4,
+                                        borderTopLeftRadius: 4,
                                         backgroundColor: 'colors.action',
                                         textTransform: 'capitalize'
                                     }}
