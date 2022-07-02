@@ -177,13 +177,14 @@ const ServicesPage = () => {
                     </Grid>
                 </Container>
             </Box>
-            <Box sx={{
-                display: 'flex',
-                alignItems: 'center',
-                backgroundColor: 'background.paper',
-                minHeight: '50vh',
-                py: {xs: 8, lg: 4}
-            }}>
+            <Box
+                sx={{
+                    display: 'flex',
+                    alignItems: 'center',
+                    backgroundColor: 'background.paper',
+                    minHeight: '50vh',
+                    py: {xs: 8, lg: 4}
+                }}>
                 <Container>
                     <Grid container={true} spacing={4}>
                         <Grid item={true} xs={12} md={8}>

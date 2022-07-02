@@ -59,7 +59,7 @@ const ForeignPoliciesPage = () => {
                 display: 'flex',
                 alignItems: 'center',
                 minHeight: '50vh',
-                py: {xs: 8, lg: 4}
+                py: {xs: 8}
             }}>
                 <Container>
                     <Grid container={true} spacing={4}>
@@ -95,9 +95,10 @@ const ForeignPoliciesPage = () => {
                                 </Typography>
                                 <Link to="/" style={{textDecoration: 'none'}}>
                                     <Button
+                                        color="primary"
+                                        variant="contained"
                                         size="large"
                                         sx={{textTransform: 'capitalize'}}
-                                        variant="outlined"
                                         endIcon={<ChevronRight/>}>
                                         Read More
                                     </Button>
@@ -112,7 +113,7 @@ const ForeignPoliciesPage = () => {
                 display: 'flex',
                 alignItems: 'center',
                 backgroundColor: 'background.paper',
-                minHeight: '50vh', py: {xs: 8, lg: 4}
+                minHeight: '50vh', py: {xs: 8}
             }}>
                 <Container>
                     <Grid container={true} spacing={4}>
@@ -135,9 +136,10 @@ const ForeignPoliciesPage = () => {
                                 </Typography>
                                 <Link to="/" style={{textDecoration: 'none'}}>
                                     <Button
+                                        color="primary"
+                                        variant="contained"
                                         size="large"
                                         sx={{textTransform: 'capitalize'}}
-                                        variant="outlined"
                                         endIcon={<ChevronRight/>}>
                                         Read More
                                     </Button>
@@ -166,7 +168,7 @@ const ForeignPoliciesPage = () => {
                 alignItems: 'center',
                 backgroundColor: 'background.default',
                 minHeight: '50vh',
-                py: {xs: 8, lg: 4}
+                py: {xs: 8}
             }}>
                 <Container>
                     <Grid container={true} spacing={4}>
@@ -199,9 +201,10 @@ const ForeignPoliciesPage = () => {
                                 </Typography>
                                 <Link to="/" style={{textDecoration: 'none'}}>
                                     <Button
+                                        color="primary"
+                                        variant="contained"
                                         size="large"
                                         sx={{textTransform: 'capitalize'}}
-                                        variant="outlined"
                                         endIcon={<ChevronRight/>}>
                                         Read More
                                     </Button>
