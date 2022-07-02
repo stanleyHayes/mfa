@@ -56,7 +56,7 @@ const DrawerContent = () => {
                                 <NavLink
                                     label="Foreign Policies"
                                     active={pathname === 'foreign-policies/ghana-foreign-policy'}
-                                    path="/foreign-policies/ghana-foreign-policy"
+                                    path="/foreign-policies"
                                 />
 
                                 <NavLink
