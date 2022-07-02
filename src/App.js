@@ -30,6 +30,7 @@ import PhotosPage from "./pages/media/photos-page";
 import VideosPage from "./pages/media/videos-page";
 import VacanciesPage from "./pages/others/vacancies-page";
 import PhotoGalleryPage from "./pages/media/photo-gallery-page";
+import MissionsPage from "./pages/missions/missions-page";
 
 function App() {
     const {themeVariant} = useSelector(selectUI);
@@ -149,6 +150,13 @@ function App() {
                     path="/vacancies/"
                     exact={true}
                 />
+
+                <Route
+                    element={<MissionsPage/>}
+                    path="/missions/:continent"
+                    exact={true}
+                />
+
             </Routes>
         </ThemeProvider>
     );
