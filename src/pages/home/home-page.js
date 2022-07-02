@@ -1,3 +1,4 @@
+import React from "react";
 import Layout from "../../components/layout/layout";
 import {
     Alert,
@@ -527,9 +528,9 @@ const HomePage = () => {
                         </Box>
                     )}
 
-                    {events?.events?.length > 0 && (
+                    {events && events.length > 0 && (
                         <Grid container={true} spacing={4}>
-                            {events?.slice(6)?.map(event => {
+                            {events.slice(6).map(event => {
                                 return (
                                     <Grid key={event._id} item={true} xs={12} md={4} lg={3}>
                                         <Event event={event}/>

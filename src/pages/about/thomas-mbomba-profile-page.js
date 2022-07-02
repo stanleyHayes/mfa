@@ -1,3 +1,4 @@
+import React from "react";
 import Layout from "../../components/layout/layout";
 import {Box, Container, Grid, Stack, Typography} from "@mui/material";
 import image from "../../assets/images/thomas-mboba.jpg";

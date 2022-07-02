@@ -1,3 +1,4 @@
+import React from "react";
 import Layout from "../../components/layout/layout";
 import {Box, Chip, Container, Grid, Stack, Typography} from "@mui/material";
 import aicc from "../../assets/images/aicc.jpg";

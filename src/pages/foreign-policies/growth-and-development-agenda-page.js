@@ -1,3 +1,4 @@
+import React from "react";
 import Layout from "../../components/layout/layout";
 import {Box, Container, Stack, Typography} from "@mui/material";
 import port from "../../assets/images/150601-Port-of-Tema-photo-1024x738.jpg";

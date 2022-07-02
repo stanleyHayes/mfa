@@ -1,4 +1,4 @@
-import './App.css';
+import React from "react";
 import {Route, Routes} from "react-router";
 import HomePage from "./pages/home/home-page";
 import {ThemeProvider} from "@mui/material";
@@ -29,6 +29,7 @@ import PublicationsPage from "./pages/media/publications-page";
 import PhotosPage from "./pages/media/photos-page";
 import VideosPage from "./pages/media/videos-page";
 import VacanciesPage from "./pages/others/vacancies-page";
+import PhotoGalleryPage from "./pages/media/photo-gallery-page";
 
 function App() {
     const {themeVariant} = useSelector(selectUI);
@@ -128,6 +129,12 @@ function App() {
                 <Route
                     element={<PhotosPage/>}
                     path="/media/photos"
+                    exact={true}
+                />
+
+                <Route
+                    element={<PhotoGalleryPage/>}
+                    path="/media/photos/:album"
                     exact={true}
                 />
 

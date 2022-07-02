@@ -1,3 +1,4 @@
+import React from "react";
 import {AppBar} from "@mui/material";
 import TopBar from "./top-bar/top-bar";
 import NavBar from "./nav-bar/nav-bar";

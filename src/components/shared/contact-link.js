@@ -1,3 +1,4 @@
+import React from "react";
 import {Link, Stack, Typography} from "@mui/material";
 
 const ContactLink = ({icon, value, link, label}) => {

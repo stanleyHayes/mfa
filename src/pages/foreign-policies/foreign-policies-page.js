@@ -1,3 +1,4 @@
+import React from "react";
 import Layout from "../../components/layout/layout";
 import {Box, Button, Container, Grid, Stack, Typography} from "@mui/material";
 import foreignPolicy from "../../assets/images/foreign-policy.jpg";

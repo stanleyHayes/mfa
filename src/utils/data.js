@@ -4,6 +4,14 @@ import asia from "./../assets/images/asia.png";
 import europe from "./../assets/images/europe.png";
 import middleEast from "./../assets/images/middle-east.png";
 
+import un from "./../assets/images/un.png";
+import au from "./../assets/images/au.png";
+import ecowas from "./../assets/images/ecowas.png";
+import commonwealth from "./../assets/images/commonwealth.png";
+import worldBank from "./../assets/images/the-world-bank.png";
+import imf from "./../assets/images/imf.png";
+import undp from "./../assets/images/undp.png";
+
 const functionalAreas = [
     "Policy Planning, Monitoring and Evaluation",
     "Administration",
@@ -41,8 +49,47 @@ const missions = [
     {area: 'Asia', link: '', image: asia},
 ];
 
+const vacancies = [
+    {
+        name: 'United Nations Vacancies',
+        image: un,
+        link: 'https://careers.un.org/lbw/home.aspx?viewtype=SJ&vacancy=All'
+    },
+    {
+        name: 'African Union Vacancies',
+        image: au,
+        link: 'https://careers.au.int/en'
+    },
+    {
+        name: 'Economic Community of West African States',
+        image: ecowas,
+        link: 'https://ecowas.int/?page_id=6077'
+    },
+    {
+        name: 'Commonwealth',
+        image: commonwealth,
+        link: 'https://thecommonwealth.org/jobs'
+    },
+    {
+        name: 'WorldBank',
+        image: worldBank,
+        link: 'https://www.worldbank.org/en/about/careers'
+    },
+    {
+        name: 'International Monetary Funds',
+        image: imf,
+        link: 'https://imf.wd5.myworkdayjobs.com/IMF'
+    },
+    {
+        name: 'United Nations Development Programme',
+        image: undp,
+        link: 'https://jobs.undp.org/cj_view_jobs.cfm'
+    }
+];
+
 export const DATA = {
     FUNCTIONAL_AREAS: functionalAreas,
     GLOBAL_AREAS: globalAreas,
-    MISSIONS: missions
+    MISSIONS: missions,
+    VACANCIES: vacancies
 }

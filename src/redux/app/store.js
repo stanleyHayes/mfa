@@ -6,7 +6,7 @@ import newsReducer from "./../features/news/news-slice";
 import publicationsReducer from "./../features/publications/publication-slice";
 import photosReducer from "./../features/photos/photo-slice";
 import pressReleasesReducer from "./../features/press-releases/press-release-slice";
-import videosReducer from "./../features/press-releases/press-release-slice";
+import videosReducer from "./../features/videos/video-slice";
 import announcementsReducer from "./../features/announcements/announcement-slice";
 import {MFA_CONSTANTS} from "../../utils/constants";
 

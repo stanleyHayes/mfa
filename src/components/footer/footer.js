@@ -1,8 +1,9 @@
+import React from "react";
 import {Box, Divider} from "@mui/material";
 import Copyright from "./copyright";
 import DesktopFooter from "./desktop-footer";
 import MobileFooter from "./mobile-footer";
-import React from "react";
+
 
 const Footer = () => {
     return (

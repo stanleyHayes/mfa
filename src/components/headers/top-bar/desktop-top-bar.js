@@ -1,6 +1,7 @@
+import React from "react";
 import {Box, Container, Stack, Toolbar} from "@mui/material";
 import ContactLink from "../../shared/contact-link";
-import {Call, DarkMode, Facebook, Instagram, LightMode, LocationOn, Mail, Twitter} from "@mui/icons-material";
+import {Call, DarkMode, Facebook, Instagram, LightMode, Mail, Twitter} from "@mui/icons-material";
 import {useDispatch, useSelector} from "react-redux";
 import {selectUI, UI_ACTION_CREATORS} from "../../../redux/features/ui/ui-slice";
 
@@ -38,7 +39,7 @@ const DesktopTobBar = () => {
                                         cursor: 'pointer',
                                         backgroundColor: 'light.primary',
                                         color: 'white',
-                                        borderRadius: 4,
+                                        borderRadius: 0.2,
                                         padding: 0.6,
                                         fontSize: 20,
                                     }}
@@ -50,29 +51,12 @@ const DesktopTobBar = () => {
 
                         <ContactLink
                             icon={
-                                <LocationOn
-                                    sx={{
-                                        cursor: 'pointer',
-                                        backgroundColor: 'light.primary',
-                                        color: 'white',
-                                        borderRadius: 4,
-                                        padding: 0.6,
-                                        fontSize: 20,
-                                    }}
-                                />
-                            }
-                            link=""
-                            value="Flat 5 Agostinho Neto Rd, Accra, Ghana"
-                        />
-
-                        <ContactLink
-                            icon={
                                 <Mail
                                     sx={{
                                         cursor: 'pointer',
                                         backgroundColor: 'light.primary',
                                         color: 'white',
-                                        borderRadius: 4,
+                                        borderRadius: 0.2,
                                         padding: 0.6,
                                         fontSize: 20,
                                     }}
@@ -93,7 +77,7 @@ const DesktopTobBar = () => {
                                         cursor: 'pointer',
                                         backgroundColor: 'light.primary',
                                         color: 'white',
-                                        borderRadius: 4,
+                                        borderRadius: 0.2,
                                         padding: 0.6,
                                         fontSize: 20,
                                     }}
@@ -109,7 +93,7 @@ const DesktopTobBar = () => {
                                         cursor: 'pointer',
                                         backgroundColor: 'light.primary',
                                         color: 'white',
-                                        borderRadius: 4,
+                                        borderRadius: 0.2,
                                         padding: 0.6,
                                         fontSize: 20,
                                     }}
@@ -125,7 +109,7 @@ const DesktopTobBar = () => {
                                         cursor: 'pointer',
                                         backgroundColor: 'light.primary',
                                         color: 'white',
-                                        borderRadius: 4,
+                                        borderRadius: 0.2,
                                         padding: 0.6,
                                         fontSize: 20,
                                     }}
@@ -141,7 +125,7 @@ const DesktopTobBar = () => {
                                     cursor: 'pointer',
                                     backgroundColor: 'light.primary',
                                     color: 'white',
-                                    borderRadius: 4,
+                                    borderRadius: 0.2,
                                     padding: 0.6,
                                     fontSize: 20,
                                 }}
@@ -153,7 +137,7 @@ const DesktopTobBar = () => {
                                     cursor: 'pointer',
                                     backgroundColor: 'light.primary',
                                     color: 'white',
-                                    borderRadius: 4,
+                                    borderRadius: 0.2,
                                     padding: 0.6,
                                     fontSize: 20,
                                 }}
