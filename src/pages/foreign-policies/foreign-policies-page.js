@@ -1,3 +1,4 @@
+import React from "react";
 import Layout from "../../components/layout/layout";
 import {Box, Button, Container, Grid, Stack, Typography} from "@mui/material";
 import foreignPolicy from "../../assets/images/foreign-policy.jpg";
@@ -81,7 +82,7 @@ const ForeignPoliciesPage = () => {
                                 <Typography variant="h5" sx={{color: 'text.primary'}}>
                                     GHANA’S FOREIGN POLICY GUIDELINE
                                 </Typography>
-                                <Typography variant="body1" sx={{color: 'text.secondary'}}>
+                                <Typography variant="body2" sx={{color: 'text.secondary'}}>
                                     The Ministry of Foreign Affairs in concert with its Diplomatic Missions abroad, has
                                     the
                                     responsibility for the conduct of Ghana’s foreign policy. To that end, the Ministry
@@ -93,11 +94,12 @@ const ForeignPoliciesPage = () => {
                                     and
                                     international events and situations.
                                 </Typography>
-                                <Link to="/" style={{textDecoration: 'none'}}>
+                                <Link to="/foreign-policies/ghana-foreign-policy-guideline" style={{textDecoration: 'none'}}>
                                     <Button
                                         color="primary"
                                         variant="contained"
                                         size="large"
+                                        disableElevation={true}
                                         sx={{textTransform: 'capitalize'}}
                                         endIcon={<ChevronRight/>}>
                                         Read More
@@ -122,7 +124,7 @@ const ForeignPoliciesPage = () => {
                                 <Typography variant="h5" sx={{color: 'text.primary'}}>
                                     POLICY OBJECTIVE
                                 </Typography>
-                                <Typography variant="body1" sx={{color: 'text.secondary'}}>
+                                <Typography variant="body2" sx={{color: 'text.secondary'}}>
                                     Ghana's foreign policy objectives continue to be directed towards the promotion and
                                     protection of the interests of Ghana, establishment of a just and equitable
                                     international economic policy and social order. The rest are the promotion of
@@ -134,8 +136,9 @@ const ForeignPoliciesPage = () => {
                                     United Nations, the African Union, the Commonwealth, the ECOWAS Treaty and other
                                     organisations of which Ghana is a member.
                                 </Typography>
-                                <Link to="/" style={{textDecoration: 'none'}}>
+                                <Link to="/foreign-policies/foreign-policies-objectives" style={{textDecoration: 'none'}}>
                                     <Button
+                                        disableElevation={true}
                                         color="primary"
                                         variant="contained"
                                         size="large"
@@ -190,7 +193,7 @@ const ForeignPoliciesPage = () => {
                                 <Typography gutterBottom={true} variant="h5" sx={{color: 'text.primary'}}>
                                     GROWTH AND DEVELOPMENT AGENDA
                                 </Typography>
-                                <Typography variant="body1" sx={{color: 'text.secondary'}}>
+                                <Typography variant="body2" sx={{color: 'text.secondary'}}>
                                     The current foreign policy goal of Government is to achieve good neighbourliness and
                                     pursue economic diplomacy. To this end the policy interventions to be implemented
                                     over
@@ -199,8 +202,9 @@ const ForeignPoliciesPage = () => {
                                     international peace and sustainable development; and leverage the economic and
                                     technological opportunities for sustainable development.
                                 </Typography>
-                                <Link to="/" style={{textDecoration: 'none'}}>
+                                <Link to="/foreign-policies/growth-and-development-agenda" style={{textDecoration: 'none'}}>
                                     <Button
+                                        disableElevation={true}
                                         color="primary"
                                         variant="contained"
                                         size="large"

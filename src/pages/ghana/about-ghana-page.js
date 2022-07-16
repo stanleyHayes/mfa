@@ -1,3 +1,4 @@
+import React from "react";
 import Layout from "../../components/layout/layout";
 import {Box, Container, Stack, Typography} from "@mui/material";
 import aicc from "../../assets/images/aicc.jpg";
@@ -62,12 +63,12 @@ const AboutGhanaPage = () => {
                         <Typography variant="h4" sx={{color: 'text.primary'}}>
                             BRIEF HISTORY OF GHANA
                         </Typography>
-                        <Typography variant="body1" sx={{color: 'text.secondary'}}>
+                        <Typography variant="body2" sx={{color: 'text.secondary'}}>
                             The Republic of Ghana is located in West Africa. It borders Cote d’Ivoire to the west,
                             Burkina
                             Faso to the north, Togo to the east and the Gulf of Guinea to the south.
                         </Typography>
-                        <Typography variant="body1" sx={{color: 'text.secondary'}}>
+                        <Typography variant="body2" sx={{color: 'text.secondary'}}>
                             Ghana was inhabited in pre-colonial times by a number of ancient, predominantly Akan
                             Kingdoms,
                             including the Akwamus on the eastern coast, the inland Ashanti Empire and various Fante and
@@ -76,7 +77,7 @@ const AboutGhanaPage = () => {
                             established a
                             Crown Colony, the Gold Coast, in 1874.
                         </Typography>
-                        <Typography variant="body1" sx={{color: 'text.secondary'}}>
+                        <Typography variant="body2" sx={{color: 'text.secondary'}}>
                             Ghana became the first sub-Saharan African country to gain its independence in 1957. Dr.
                             Kwame
                             Nkrumah, who was responsible for the successful negotiations with the British and declared
@@ -84,7 +85,7 @@ const AboutGhanaPage = () => {
                             significant role Dr. Kwame Nkrumah played in modern Ghana’s development, the FPSO was named
                             after him by the Jubilee Integrated Project Team.
                         </Typography>
-                        <Typography variant="body1" sx={{color: 'text.secondary'}}>
+                        <Typography variant="body2" sx={{color: 'text.secondary'}}>
                             In 2009, John Evans Atta Mills took office as President with a difference of about 40,000
                             votes
                             (0.46%) between his party, the National Democratic Congress, and the New Patriotic Party,
@@ -114,7 +115,7 @@ const AboutGhanaPage = () => {
                         <Typography variant="h4" sx={{color: 'text.primary'}}>
                             OVERVIEW
                         </Typography>
-                        <Typography variant="body1" sx={{color: 'text.secondary'}}>
+                        <Typography variant="body2" sx={{color: 'text.secondary'}}>
                             Ghana’s economy has been strengthened by a quarter century of relatively sound management, a
                             competitive business environment, and sustained reductions in poverty levels. Ghana is well
                             endowed with natural resources and agriculture accounts for roughly one-quarter of GDP and
@@ -122,13 +123,13 @@ const AboutGhanaPage = () => {
                             accounts
                             for 50% of GDP.
                         </Typography>
-                        <Typography variant="body1" sx={{color: 'text.secondary'}}>
+                        <Typography variant="body2" sx={{color: 'text.secondary'}}>
                             According to the 2018 Budget Statement and Economic Policy, the summary of Ghana’s
                             Macroeconomic
                             performance, under the theme “Putting Ghana Back to Work”, is as follows:
                         </Typography>
 
-                        <Typography variant="body1" sx={{color: 'text.secondary'}}>
+                        <Typography variant="body2" sx={{color: 'text.secondary'}}>
                             Overall real GDP grew at an estimated 7.8 percent in the first half of 2017 (6.6% in quarter
                             one
                             and 9.0% in quarter two) against 2.7 percent in same period in 2016. Overall GDP growth is

@@ -1,3 +1,4 @@
+import React from "react";
 import {
     Accordion,
     AccordionDetails,
@@ -10,35 +11,36 @@ import {
     Tooltip,
     Typography
 } from "@mui/material";
-import MobileNavLink from "../shared/mobile-nav-link";
-import {ChevronRight, OpenInNew} from "@mui/icons-material";
+import MobileMobileNavLink from "../shared/mobile-nav-link";
+import {Call, ChevronRight, DarkMode, LightMode, LocationOn, Mail, OpenInNew} from "@mui/icons-material";
 import {useLocation} from "react-router";
-import NavLink from "../shared/nav-link";
+import MobileNavLink from "../shared/nav-link";
 import {Link} from "react-router-dom";
-import {UI_ACTION_CREATORS} from "../../redux/features/ui/ui-slice";
-import {useDispatch} from "react-redux";
+import {selectUI, UI_ACTION_CREATORS} from "../../redux/features/ui/ui-slice";
+import {useDispatch, useSelector} from "react-redux";
+import ContactLink from "../shared/contact-link";
 
 const DrawerContent = () => {
 
     const {pathname} = useLocation();
-
     const dispatch = useDispatch();
+    const {themeVariant} = useSelector(selectUI);
 
     return (
         <Box sx={{py: 2, backgroundColor: 'background.default', minHeight: '100vh'}}>
             <Container>
                 <Stack sx={{mb: 4}} direction="column" spacing={1}>
-                    <MobileNavLink
+                    <MobileMobileNavLink
                         active={pathname === '/'}
                         path="/" label="Home"
                     />
 
-                    <MobileNavLink
+                    <MobileMobileNavLink
                         active={pathname === '/services'}
                         path="/services" label="Services"
                     />
 
-                    <MobileNavLink
+                    <MobileMobileNavLink
                         active={pathname === '/contact'}
                         path="/contact" label="Contact"
                     />
@@ -51,25 +53,25 @@ const DrawerContent = () => {
                         </AccordionSummary>
                         <AccordionDetails>
                             <Stack direction="column">
-                                <NavLink
+                                <MobileNavLink
                                     label="Foreign Policies"
                                     active={pathname === 'foreign-policies/ghana-foreign-policy'}
-                                    path="/foreign-policies/ghana-foreign-policy"
+                                    path="/foreign-policies"
                                 />
 
-                                <NavLink
+                                <MobileNavLink
                                     label="Ghana's Foreign Policy Guideline"
                                     active={pathname === '/foreign-policies/ghana-foreign-policy-guideline'}
                                     path="/foreign-policies/ghana-foreign-policy-guideline"
                                 />
 
-                                <NavLink
+                                <MobileNavLink
                                     label="Foreign Policy Objectives"
                                     active={pathname === '/foreign-policies/foreign-policy-objectives'}
                                     path="/foreign-policies/foreign-policies-objectives"
                                 />
 
-                                <NavLink
+                                <MobileNavLink
                                     label="Growth & Development Agenda"
                                     active={pathname === '/foreign-policies/growth-and-development-agenda'}
                                     path="/foreign-policies/growth-and-development-agenda"
@@ -86,31 +88,31 @@ const DrawerContent = () => {
                         <AccordionDetails>
                             <Stack direction="column">
 
-                                <NavLink
+                                <MobileNavLink
                                     label="Overview"
                                     active={pathname === '/about'}
                                     path="/about"
                                 />
 
-                                <NavLink
+                                <MobileNavLink
                                     label="Honorable Minister's Profile"
                                     active={pathname === '/about/honorable-ministers-profile'}
                                     path="/about/honorable-ministers-profile"
                                 />
 
-                                <NavLink
+                                <MobileNavLink
                                     label="Hon. Kwaku Ampratwum Sarpong's"
                                     active={pathname === '/about/kwaku-ampratwum-sarpong-profile'}
                                     path="/about/kwaku-ampratwum-sarpong-profile"
                                 />
 
-                                <NavLink
+                                <MobileNavLink
                                     label="Hon. Thomas Mbomba's Profile"
                                     active={pathname === '/about/thomas-mbomba-profile'}
                                     path="/about/thomas-mbomba-profile"
                                 />
 
-                                <NavLink
+                                <MobileNavLink
                                     label="The Chief Director's Profile"
                                     active={pathname === '/about/the-chief-directors-profile'}
                                     path="/about/the-chief-directors-profile"
@@ -189,7 +191,7 @@ const DrawerContent = () => {
                         </AccordionSummary>
                         <AccordionDetails>
                             <Stack direction="column" spacing={1}>
-                                <Link onClick={() => dispatch(UI_ACTION_CREATORS.closeDrawer())} to="/press"
+                                <Link onClick={() => dispatch(UI_ACTION_CREATORS.closeDrawer())} to="/press-release"
                                       style={{textDecoration: 'none'}}>
                                     <Button size="small" sx={{
                                         color: 'text.secondary',
@@ -327,26 +329,103 @@ const DrawerContent = () => {
                         </AccordionDetails>
                     </Accordion>
                 </Stack>
-                <Tooltip title="Apply for your passport online">
-                    <MUILink target="_blank" underline="none" href="https://passport.mfa.gov.gh/">
-                        <Button
-                            fullWidth={true}
-                            endIcon={<OpenInNew/>}
-                            sx={{
-                                borderTopRightRadius: 32,
-                                borderBottomRightRadius: 32,
-                                borderBottomLeftRadius: 32,
-                                borderTopLeftRadius: 32,
-                                backgroundColor: 'colors.action',
-                                textTransform: 'capitalize',
-                                padding: 1
-                            }}
-                            disableElevation={true}
-                            size="small">
-                            Online Passport Application
-                        </Button>
-                    </MUILink>
-                </Tooltip>
+
+                <Stack direction="column" spacing={3}>
+                    <Tooltip title="Apply for your passport online">
+                        <MUILink target="_blank" underline="none" href="https://passport.mfa.gov.gh/">
+                            <Button
+                                fullWidth={true}
+                                endIcon={<OpenInNew/>}
+                                sx={{
+                                    borderTopRightRadius: 32,
+                                    borderBottomRightRadius: 32,
+                                    borderBottomLeftRadius: 32,
+                                    borderTopLeftRadius: 32,
+                                    backgroundColor: 'colors.action',
+                                    textTransform: 'capitalize',
+                                    padding: 1
+                                }}
+                                disableElevation={true}
+                                size="small">
+                                Online Passport Application
+                            </Button>
+                        </MUILink>
+                    </Tooltip>
+                    <Stack alignItems="center" justifyContent="space-between" direction="row">
+                        <ContactLink
+                            icon={
+                                <Call
+                                    sx={{
+                                        cursor: 'pointer',
+                                        backgroundColor: 'light.primary',
+                                        color: 'white',
+                                        borderRadius: 0.2,
+                                        padding: 0.6,
+                                        fontSize: "large",
+                                    }}
+                                />
+                            }
+                            link="tel:+23327000.28319"
+                        />
+
+                        <ContactLink
+                            icon={
+                                <LocationOn
+                                    sx={{
+                                        cursor: 'pointer',
+                                        backgroundColor: 'light.primary',
+                                        color: 'white',
+                                        borderRadius: 0.2,
+                                        padding: 0.6,
+                                        fontSize: "large",
+                                    }}
+                                />
+                            }
+                        />
+
+                        <ContactLink
+                            icon={
+                                <Mail
+                                    sx={{
+                                        cursor: 'pointer',
+                                        backgroundColor: 'light.primary',
+                                        color: 'white',
+                                        borderRadius: 0.2,
+                                        padding: 0.6,
+                                        fontSize: "large",
+                                    }}
+                                />
+                            }
+                            link="mailto:dev.stanley.hayford@gmail.com"
+                        />
+
+                        {themeVariant === 'light' ? (
+                            <DarkMode
+                                onClick={() => dispatch(UI_ACTION_CREATORS.toggleTheme())}
+                                sx={{
+                                    cursor: 'pointer',
+                                    backgroundColor: 'light.primary',
+                                    color: 'white',
+                                    borderRadius: 0.2,
+                                    padding: 0.6,
+                                    fontSize: 20,
+                                }}
+                            />
+                        ) : (
+                            <LightMode
+                                onClick={() => dispatch(UI_ACTION_CREATORS.toggleTheme())}
+                                sx={{
+                                    cursor: 'pointer',
+                                    backgroundColor: 'light.primary',
+                                    color: 'white',
+                                    borderRadius: 0.2,
+                                    padding: 0.6,
+                                    fontSize: 20,
+                                }}
+                            />
+                        )}
+                    </Stack>
+                </Stack>
             </Container>
         </Box>
     )

@@ -1,3 +1,4 @@
+import React from "react";
 import Layout from "../../components/layout/layout";
 import {
     Alert,
@@ -53,7 +54,7 @@ const NewsDetailPage = () => {
                                 <Skeleton variant="text" animation="pulse"/>
                             ) : (
                                 <Typography variant="h4" sx={{color: 'text.primary', fontWeight: 200}}>
-                                    {singleNews?.title}
+                                    {singleNews && singleNews.title}
                                 </Typography>
                             )}
                             {newsLoading ? (
@@ -73,11 +74,7 @@ const NewsDetailPage = () => {
                                         )
                                     }
 
-                                    {singleNews && singleNews.tags && singleNews.tags.map((tag, index) => {
-                                        return (
-                                            <Chip key={index} label={tag} variant="filled"/>
-                                        )
-                                    })}
+                                    <Chip label={singleNews && singleNews.category} variant="filled"/>
                                 </Stack>
                             )}
 

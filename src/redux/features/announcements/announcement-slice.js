@@ -1,9 +1,10 @@
 import {createSlice} from "@reduxjs/toolkit";
+import {announcements} from "./announcement-data";
 
 const announcementSlice = createSlice({
     name: 'announcements',
     initialState: {
-        announcements: [],
+        announcements: [...announcements],
         announcementsLoading: false,
         announcementsError: null,
         singlePublication: null

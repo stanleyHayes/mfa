@@ -1,3 +1,4 @@
+import React from "react";
 import {Container, Stack, Toolbar} from "@mui/material";
 import ContactLink from "../../shared/contact-link";
 import {Call, DarkMode, LightMode, LocationOn, Mail} from "@mui/icons-material";
@@ -26,13 +27,13 @@ const MobileTobBar = () => {
                                     cursor: 'pointer',
                                     backgroundColor: 'light.primary',
                                     color: 'white',
-                                    borderRadius: 4,
+                                    borderRadius: 0.2,
                                     padding: 0.6,
                                     fontSize: "large",
                                 }}
                             />
                         }
-                        link="tel:+233270048319"
+                        link="tel:+23327000.28319"
                     />
 
                     <ContactLink
@@ -42,7 +43,7 @@ const MobileTobBar = () => {
                                     cursor: 'pointer',
                                     backgroundColor: 'light.primary',
                                     color: 'white',
-                                    borderRadius: 4,
+                                    borderRadius: 0.2,
                                     padding: 0.6,
                                     fontSize: "large",
                                 }}
@@ -57,7 +58,7 @@ const MobileTobBar = () => {
                                     cursor: 'pointer',
                                     backgroundColor: 'light.primary',
                                     color: 'white',
-                                    borderRadius: 4,
+                                    borderRadius: 0.2,
                                     padding: 0.6,
                                     fontSize: "large",
                                 }}
@@ -73,7 +74,7 @@ const MobileTobBar = () => {
                                 cursor: 'pointer',
                                 backgroundColor: 'light.primary',
                                 color: 'white',
-                                borderRadius: 4,
+                                borderRadius: 0.2,
                                 padding: 0.6,
                                 fontSize: 20,
                             }}
@@ -85,7 +86,7 @@ const MobileTobBar = () => {
                                 cursor: 'pointer',
                                 backgroundColor: 'light.primary',
                                 color: 'white',
-                                borderRadius: 4,
+                                borderRadius: 0.2,
                                 padding: 0.6,
                                 fontSize: 20,
                             }}
